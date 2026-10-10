@@ -4,8 +4,7 @@
     "title": "Kubernetes Admission Controller Modification",
     "techniques": [
       "t1078",
-      "t1552",
-      "t1552.007"
+      "t1552"
     ]
   },
   {
@@ -20,28 +19,6 @@
     "title": "Kubernetes Events Deleted",
     "techniques": [
       "t1070"
-    ]
-  },
-  {
-    "file": "rules/application/kubernetes/audit/kubernetes_audit_secrets_enumeration.yml",
-    "title": "Kubernetes Secrets Enumeration",
-    "techniques": [
-      "t1552.007"
-    ]
-  },
-  {
-    "file": "rules/application/kubernetes/audit/kubernetes_audit_serviceaccount_creation.yml",
-    "title": "New Kubernetes Service Account Created",
-    "techniques": [
-      "t1136"
-    ]
-  },
-  {
-    "file": "rules/application/kubernetes/audit/kubernetes_audit_rbac_permisions_listing.yml",
-    "title": "RBAC Permission Enumeration Attempt",
-    "techniques": [
-      "t1069.003",
-      "t1087.004"
     ]
   },
   {
@@ -61,25 +38,10 @@
     ]
   },
   {
-    "file": "rules/application/bitbucket/audit/bitbucket_audit_project_secret_scanning_allowlist_added.yml",
-    "title": "Bitbucket Project Secret Scanning Allowlist Added",
-    "techniques": [
-      "t1685"
-    ]
-  },
-  {
     "file": "rules/application/bitbucket/audit/bitbucket_audit_unauthorized_full_data_export_triggered.yml",
     "title": "Bitbucket Unauthorized Full Data Export Triggered",
     "techniques": [
-      "t1213.003",
       "t1586"
-    ]
-  },
-  {
-    "file": "rules/application/bitbucket/audit/bitbucket_audit_full_data_export_triggered.yml",
-    "title": "Bitbucket Full Data Export Triggered",
-    "techniques": [
-      "t1213.003"
     ]
   },
   {
@@ -89,13 +51,6 @@
       "t1082",
       "t1213",
       "t1591.004"
-    ]
-  },
-  {
-    "file": "rules/application/bitbucket/audit/bitbucket_audit_secret_scanning_rule_deleted.yml",
-    "title": "Bitbucket Secret Scanning Rule Deleted",
-    "techniques": [
-      "t1685"
     ]
   },
   {
@@ -302,29 +257,8 @@
     ]
   },
   {
-    "file": "rules/application/github/audit/github_new_org_member.yml",
-    "title": "New Github Organization Member Added",
-    "techniques": [
-      "t1136.003"
-    ]
-  },
-  {
     "file": "rules/application/github/audit/github_ssh_certificate_config_changed.yml",
     "title": "Github SSH Certificate Configuration Changed",
-    "techniques": [
-      "t1078.004"
-    ]
-  },
-  {
-    "file": "rules/application/github/audit/github_push_protection_bypass_detected.yml",
-    "title": "Github Push Protection Bypass Detected",
-    "techniques": [
-      "t1685"
-    ]
-  },
-  {
-    "file": "rules/application/github/audit/github_new_secret_created.yml",
-    "title": "Github New Secret Created",
     "techniques": [
       "t1078.004"
     ]
@@ -344,15 +278,6 @@
     ]
   },
   {
-    "file": "rules/application/github/audit/github_outside_collaborator_detected.yml",
-    "title": "Github Outside Collaborator Detected",
-    "techniques": [
-      "t1098.001",
-      "t1098.003",
-      "t1213.003"
-    ]
-  },
-  {
     "file": "rules/application/github/audit/github_disable_high_risk_configuration.yml",
     "title": "Github High Risk Configuration Disabled",
     "techniques": [
@@ -360,32 +285,10 @@
     ]
   },
   {
-    "file": "rules/application/github/audit/github_self_hosted_runner_changes_detected.yml",
-    "title": "Github Self Hosted Runner Changes Detected",
-    "techniques": [
-      "t1078.004",
-      "t1213.003"
-    ]
-  },
-  {
     "file": "rules/application/github/audit/github_secret_scanning_feature_disabled.yml",
     "title": "Github Secret Scanning Feature Disabled",
     "techniques": [
       "t1685"
-    ]
-  },
-  {
-    "file": "rules/application/github/audit/github_pages_site_changed_to_public.yml",
-    "title": "GitHub Repository Pages Site Changed to Public",
-    "techniques": [
-      "t1567.001"
-    ]
-  },
-  {
-    "file": "rules/application/github/audit/github_delete_action_invoked.yml",
-    "title": "Github Delete Action Invoked",
-    "techniques": [
-      "t1213.003"
     ]
   },
   {
@@ -605,13 +508,6 @@
     ]
   },
   {
-    "file": "rules/cloud/m365/threat_management/microsoft365_susp_inbox_forwarding.yml",
-    "title": "Suspicious Inbox Forwarding",
-    "techniques": [
-      "t1020"
-    ]
-  },
-  {
     "file": "rules/cloud/m365/threat_management/microsoft365_pst_export_alert.yml",
     "title": "PST Export Alert Using eDiscovery Alert",
     "techniques": [
@@ -654,13 +550,6 @@
     ]
   },
   {
-    "file": "rules/cloud/m365/exchange/microsoft365_new_federated_domain_added_exchange.yml",
-    "title": "New Federated Domain Added - Exchange",
-    "techniques": [
-      "t1136.003"
-    ]
-  },
-  {
     "file": "rules/cloud/m365/threat_detection/microsoft365_from_susp_ip_addresses.yml",
     "title": "Activity from Suspicious IP Addresses",
     "techniques": [
@@ -683,31 +572,9 @@
     ]
   },
   {
-    "file": "rules/cloud/m365/audit/microsoft365_new_federated_domain_added_audit.yml",
-    "title": "New Federated Domain Added",
-    "techniques": [
-      "t1484.002"
-    ]
-  },
-  {
-    "file": "rules/cloud/m365/audit/microsoft365_disabling_mfa.yml",
-    "title": "Disabling Multi Factor Authentication",
-    "techniques": [
-      "t1556.006"
-    ]
-  },
-  {
-    "file": "rules/cloud/aws/cloudtrail/aws_route_53_domain_transferred_lock_disabled.yml",
-    "title": "AWS Route 53 Domain Transfer Lock Disabled",
-    "techniques": [
-      "t1098"
-    ]
-  },
-  {
     "file": "rules/cloud/aws/cloudtrail/aws_iam_s3browser_loginprofile_creation.yml",
     "title": "AWS IAM S3Browser LoginProfile Creation",
     "techniques": [
-      "t1059.009",
       "t1078.004"
     ]
   },
@@ -724,14 +591,6 @@
     "title": "AWS RDS Master Password Change",
     "techniques": [
       "t1020"
-    ]
-  },
-  {
-    "file": "rules/cloud/aws/cloudtrail/aws_elasticache_security_group_created.yml",
-    "title": "AWS ElastiCache Security Group Created",
-    "techniques": [
-      "t1136",
-      "t1136.003"
     ]
   },
   {
@@ -753,13 +612,6 @@
     "title": "AWS User Login Profile Was Modified",
     "techniques": [
       "t1098"
-    ]
-  },
-  {
-    "file": "rules/cloud/aws/cloudtrail/aws_sts_getcalleridentity_trufflehog.yml",
-    "title": "AWS STS GetCallerIdentity Enumeration Via TruffleHog",
-    "techniques": [
-      "t1087.004"
     ]
   },
   {
@@ -801,56 +653,10 @@
     ]
   },
   {
-    "file": "rules/cloud/aws/cloudtrail/aws_elasticache_security_group_modified_or_deleted.yml",
-    "title": "AWS ElastiCache Security Group Modified or Deleted",
-    "techniques": [
-      "t1531"
-    ]
-  },
-  {
-    "file": "rules/cloud/aws/cloudtrail/aws_sts_assumerole_misuse.yml",
-    "title": "AWS STS AssumeRole Misuse",
-    "techniques": [
-      "t1548",
-      "t1550",
-      "t1550.001"
-    ]
-  },
-  {
-    "file": "rules/cloud/aws/cloudtrail/aws_cloudtrail_new_acl_entries.yml",
-    "title": "New Network ACL Entry Added",
-    "techniques": [
-      "t1686.001"
-    ]
-  },
-  {
     "file": "rules/cloud/aws/cloudtrail/aws_rds_dbcluster_actions.yml",
     "title": "Modification or Deletion of an AWS RDS Cluster",
     "techniques": [
       "t1020"
-    ]
-  },
-  {
-    "file": "rules/cloud/aws/cloudtrail/aws_route_53_domain_transferred_to_another_account.yml",
-    "title": "AWS Route 53 Domain Transferred to Another Account",
-    "techniques": [
-      "t1098"
-    ]
-  },
-  {
-    "file": "rules/cloud/aws/cloudtrail/aws_cloudtrail_disable_logging.yml",
-    "title": "AWS CloudTrail Important Change",
-    "techniques": [
-      "t1685.002"
-    ]
-  },
-  {
-    "file": "rules/cloud/aws/cloudtrail/aws_sts_getsessiontoken_misuse.yml",
-    "title": "AWS STS GetSessionToken Misuse",
-    "techniques": [
-      "t1548",
-      "t1550",
-      "t1550.001"
     ]
   },
   {
@@ -869,13 +675,6 @@
     ]
   },
   {
-    "file": "rules/cloud/aws/cloudtrail/aws_cloudtrail_new_route_added.yml",
-    "title": "New Network Route Added",
-    "techniques": [
-      "t1686.001"
-    ]
-  },
-  {
     "file": "rules/cloud/aws/cloudtrail/aws_root_account_usage.yml",
     "title": "AWS Root Credentials",
     "techniques": [
@@ -886,15 +685,7 @@
     "file": "rules/cloud/aws/cloudtrail/aws_cloudtrail_guardduty_detector_deleted_or_updated.yml",
     "title": "AWS GuardDuty Detector Deleted Or Updated",
     "techniques": [
-      "t1685",
-      "t1685.002"
-    ]
-  },
-  {
-    "file": "rules/cloud/aws/cloudtrail/aws_config_disable_recording.yml",
-    "title": "AWS Config Disabling Channel/Recorder",
-    "techniques": [
-      "t1685.002"
+      "t1685"
     ]
   },
   {
@@ -956,17 +747,9 @@
     ]
   },
   {
-    "file": "rules/cloud/aws/cloudtrail/aws_eks_cluster_created_or_deleted.yml",
-    "title": "AWS EKS Cluster Created or Deleted",
-    "techniques": [
-      "t1485"
-    ]
-  },
-  {
     "file": "rules/cloud/aws/cloudtrail/aws_iam_s3browser_user_or_accesskey_creation.yml",
     "title": "AWS IAM S3Browser User or AccessKey Creation",
     "techniques": [
-      "t1059.009",
       "t1078.004"
     ]
   },
@@ -974,15 +757,7 @@
     "file": "rules/cloud/aws/cloudtrail/aws_iam_s3browser_templated_s3_bucket_policy_creation.yml",
     "title": "AWS IAM S3Browser Templated S3 Bucket Policy Creation",
     "techniques": [
-      "t1059.009",
       "t1078.004"
-    ]
-  },
-  {
-    "file": "rules/cloud/aws/cloudtrail/aws_ec2_vm_export_failure.yml",
-    "title": "AWS EC2 VM Export Failure",
-    "techniques": [
-      "t1005"
     ]
   },
   {
@@ -1010,7 +785,6 @@
     "file": "rules/cloud/aws/cloudtrail/aws_console_getsignintoken.yml",
     "title": "AWS Console GetSigninToken Potential Abuse",
     "techniques": [
-      "t1021.007",
       "t1550.001"
     ]
   },
@@ -1051,8 +825,7 @@
     "title": "Google Cloud Kubernetes Admission Controller",
     "techniques": [
       "t1078",
-      "t1552",
-      "t1552.007"
+      "t1552"
     ]
   },
   {
@@ -1102,13 +875,6 @@
     "title": "Google Workspace Granted Domain API Access",
     "techniques": [
       "t1098"
-    ]
-  },
-  {
-    "file": "rules/cloud/gcp/gworkspace/admin/gcp_gworkspace_application_access_levels_modified.yml",
-    "title": "Google Workspace Application Access Level Modified",
-    "techniques": [
-      "t1098.003"
     ]
   },
   {
@@ -1287,13 +1053,6 @@
     ]
   },
   {
-    "file": "rules/cloud/azure/signin_logs/azure_ad_sign_ins_from_unknown_devices.yml",
-    "title": "Sign-ins by Unknown Devices",
-    "techniques": [
-      "t1078.004"
-    ]
-  },
-  {
     "file": "rules/cloud/azure/signin_logs/azure_account_lockout.yml",
     "title": "Account Lockout",
     "techniques": [
@@ -1368,25 +1127,10 @@
     ]
   },
   {
-    "file": "rules/cloud/azure/signin_logs/azure_ad_only_single_factor_auth_required.yml",
-    "title": "Azure AD Only Single Factor Authentication Required",
-    "techniques": [
-      "t1078.004",
-      "t1556.006"
-    ]
-  },
-  {
     "file": "rules/cloud/azure/signin_logs/azure_ad_risky_sign_ins_with_singlefactorauth_from_unknown_devices.yml",
     "title": "Suspicious SignIns From A Non Registered Device",
     "techniques": [
       "t1078"
-    ]
-  },
-  {
-    "file": "rules/cloud/azure/signin_logs/azure_ad_azurehound_discovery.yml",
-    "title": "Discovery Using AzureHound",
-    "techniques": [
-      "t1087.004"
     ]
   },
   {
@@ -1442,13 +1186,6 @@
     ]
   },
   {
-    "file": "rules/cloud/azure/audit_logs/azure_auditlogs_laps_credential_dumping.yml",
-    "title": "Windows LAPS Credential Dump From Entra ID",
-    "techniques": [
-      "t1098.005"
-    ]
-  },
-  {
     "file": "rules/cloud/azure/audit_logs/azure_app_owner_added.yml",
     "title": "Added Owner To Application",
     "techniques": [
@@ -1460,13 +1197,6 @@
     "title": "Temporary Access Pass Added To An Account",
     "techniques": [
       "t1078.004"
-    ]
-  },
-  {
-    "file": "rules/cloud/azure/audit_logs/azure_app_credential_added.yml",
-    "title": "Added Credentials to Existing Application",
-    "techniques": [
-      "t1098.001"
     ]
   },
   {
@@ -1502,8 +1232,7 @@
     "file": "rules/cloud/azure/audit_logs/azure_ad_user_added_to_admin_role.yml",
     "title": "User Added to an Administrator's Azure AD Role",
     "techniques": [
-      "t1078",
-      "t1098.003"
+      "t1078"
     ]
   },
   {
@@ -1511,13 +1240,6 @@
     "title": "User State Changed From Guest To Member",
     "techniques": [
       "t1078.004"
-    ]
-  },
-  {
-    "file": "rules/cloud/azure/audit_logs/azure_app_privileged_permissions.yml",
-    "title": "App Granted Privileged Delegated Or App Permissions",
-    "techniques": [
-      "t1098.003"
     ]
   },
   {
@@ -1569,6 +1291,13 @@
     "title": "User Added To Privilege Role",
     "techniques": [
       "t1078.004"
+    ]
+  },
+  {
+    "file": "rules/cloud/azure/audit_logs/azure_application_deleted.yml",
+    "title": "Azure Application Deleted",
+    "techniques": [
+      "t1489"
     ]
   },
   {
@@ -1629,13 +1358,6 @@
     ]
   },
   {
-    "file": "rules/cloud/azure/audit_logs/azure_app_role_added.yml",
-    "title": "App Assigned To Azure RBAC/Microsoft Entra Role",
-    "techniques": [
-      "t1098.003"
-    ]
-  },
-  {
     "file": "rules/cloud/azure/audit_logs/azure_pim_change_settings.yml",
     "title": "Changes To PIM Settings",
     "techniques": [
@@ -1687,24 +1409,11 @@
     ]
   },
   {
-    "file": "rules/cloud/azure/activity_logs/azure_firewall_rule_collection_modified_or_deleted.yml",
-    "title": "Azure Firewall Rule Collection Modified or Deleted",
-    "techniques": [
-      "t1686.001"
-    ]
-  },
-  {
-    "file": "rules/cloud/azure/activity_logs/azure_container_registry_created_or_deleted.yml",
-    "title": "Azure Container Registry Created or Deleted",
-    "techniques": [
-      "t1485"
-    ]
-  },
-  {
     "file": "rules/cloud/azure/activity_logs/azure_kubernetes_service_account_modified_or_deleted.yml",
     "title": "Azure Kubernetes Service Account Modified or Deleted",
     "techniques": [
       "t1485",
+      "t1489",
       "t1531"
     ]
   },
@@ -1712,28 +1421,16 @@
     "file": "rules/cloud/azure/activity_logs/azure_kubernetes_rolebinding_modified_or_deleted.yml",
     "title": "Azure Kubernetes RoleBinding/ClusterRoleBinding Modified and Deleted",
     "techniques": [
-      "t1485"
+      "t1485",
+      "t1489"
     ]
   },
   {
     "file": "rules/cloud/azure/activity_logs/azure_kubernetes_role_access.yml",
     "title": "Azure Kubernetes Sensitive Role Access",
     "techniques": [
-      "t1485"
-    ]
-  },
-  {
-    "file": "rules/cloud/azure/activity_logs/azure_granting_permission_detection.yml",
-    "title": "Granting Of Permissions To An Account",
-    "techniques": [
-      "t1098.003"
-    ]
-  },
-  {
-    "file": "rules/cloud/azure/activity_logs/azure_kubernetes_cluster_created_or_deleted.yml",
-    "title": "Azure Kubernetes Cluster Created or Deleted",
-    "techniques": [
-      "t1485"
+      "t1485",
+      "t1489"
     ]
   },
   {
@@ -1741,13 +1438,6 @@
     "title": "Azure Kubernetes CronJob",
     "techniques": [
       "t1053.003"
-    ]
-  },
-  {
-    "file": "rules/cloud/azure/activity_logs/azure_firewall_modified_or_deleted.yml",
-    "title": "Azure Firewall Modified or Deleted",
-    "techniques": [
-      "t1686.001"
     ]
   },
   {
@@ -1762,14 +1452,16 @@
     "file": "rules/cloud/azure/activity_logs/azure_kubernetes_secret_or_config_object_access.yml",
     "title": "Azure Kubernetes Secret or Config Object Access",
     "techniques": [
-      "t1485"
+      "t1485",
+      "t1489"
     ]
   },
   {
     "file": "rules/cloud/azure/activity_logs/azure_kubernetes_network_policy_change.yml",
     "title": "Azure Kubernetes Network Policy Change",
     "techniques": [
-      "t1485"
+      "t1485",
+      "t1489"
     ]
   },
   {
@@ -1784,8 +1476,7 @@
     "title": "Azure Kubernetes Admission Controller",
     "techniques": [
       "t1078",
-      "t1552",
-      "t1552.007"
+      "t1552"
     ]
   },
   {
@@ -1808,13 +1499,6 @@
     "techniques": [
       "t1552",
       "t1552.001"
-    ]
-  },
-  {
-    "file": "rules/cloud/azure/activity_logs/azure_network_firewall_policy_modified_or_deleted.yml",
-    "title": "Azure Network Firewall Policy Modified or Deleted",
-    "techniques": [
-      "t1686.001"
     ]
   },
   {
@@ -1843,7 +1527,6 @@
     "file": "rules/windows/process_access/proc_access_win_hktl_littlecorporal_generated_maldoc.yml",
     "title": "HackTool - LittleCorporal Generated Maldoc Injection",
     "techniques": [
-      "t1055.003",
       "t1204.002"
     ]
   },
@@ -1852,13 +1535,6 @@
     "title": "Credential Dumping Attempt Via Svchost",
     "techniques": [
       "t1548"
-    ]
-  },
-  {
-    "file": "rules/windows/process_access/proc_access_win_susp_all_access_uncommon_target.yml",
-    "title": "Uncommon Process Access Rights For Target Image",
-    "techniques": [
-      "t1055.011"
     ]
   },
   {
@@ -2054,13 +1730,6 @@
     ]
   },
   {
-    "file": "rules/windows/pipe_created/pipe_created_powershell_execution_pipe.yml",
-    "title": "New PowerShell Instance Created",
-    "techniques": [
-      "t1059.001"
-    ]
-  },
-  {
     "file": "rules/windows/pipe_created/pipe_created_sysinternals_psexec_default_pipe_susp_location.yml",
     "title": "PsExec Tool Execution From Suspicious Locations - PipeName",
     "techniques": [
@@ -2125,26 +1794,10 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_classic/posh_pc_remote_powershell_session.yml",
-    "title": "Remote PowerShell Session (PS Classic)",
-    "techniques": [
-      "t1021.006",
-      "t1059.001"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_classic/posh_pc_exe_calling_ps.yml",
     "title": "PowerShell Called from an Executable Version Mismatch",
     "techniques": [
       "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_classic/posh_pc_download_via_webclient.yml",
-    "title": "PowerShell Download Via Net.WebClient - PowerShell Classic",
-    "techniques": [
-      "t1059.001",
-      "t1105"
     ]
   },
   {
@@ -2177,25 +1830,10 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_classic/posh_pc_renamed_powershell.yml",
-    "title": "Renamed Powershell Under Powershell Channel",
-    "techniques": [
-      "t1036.003",
-      "t1059.001"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_classic/posh_pc_delete_volume_shadow_copies.yml",
     "title": "Delete Volume Shadow Copies Via WMI With PowerShell",
     "techniques": [
       "t1490"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_classic/posh_pc_susp_get_nettcpconnection.yml",
-    "title": "Use Get-NetTCPConnection",
-    "techniques": [
-      "t1049"
     ]
   },
   {
@@ -2218,13 +1856,6 @@
       "t1087.001",
       "t1087.002",
       "t1482"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_module/posh_pm_susp_local_group_reco.yml",
-    "title": "Suspicious Get Local Groups Information",
-    "techniques": [
-      "t1069.001"
     ]
   },
   {
@@ -2310,13 +1941,6 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_module/posh_pm_decompress_commands.yml",
-    "title": "PowerShell Decompress Commands",
-    "techniques": [
-      "t1140"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_module/posh_pm_invoke_obfuscation_via_stdin.yml",
     "title": "Invoke-Obfuscation Via Stdin - PowerShell Module",
     "techniques": [
@@ -2377,24 +2001,10 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_module/posh_pm_susp_get_nettcpconnection.yml",
-    "title": "Use Get-NetTCPConnection - PowerShell Module",
-    "techniques": [
-      "t1049"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_module/posh_pm_susp_invocation_specific.yml",
     "title": "Suspicious PowerShell Invocations - Specific - PowerShell Module",
     "techniques": [
       "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_module/posh_pm_susp_smb_share_reco.yml",
-    "title": "Suspicious Get Information for SMB Share - PowerShell Module",
-    "techniques": [
-      "t1069.001"
     ]
   },
   {
@@ -2425,13 +2035,6 @@
     "techniques": [
       "t1027",
       "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_module/posh_pm_susp_ad_group_reco.yml",
-    "title": "AD Groups Or Users Enumeration Using PowerShell - PoshModule",
-    "techniques": [
-      "t1069.001"
     ]
   },
   {
@@ -2475,14 +2078,6 @@
     "file": "rules/windows/powershell/powershell_script/posh_ps_shellintel_malicious_commandlets.yml",
     "title": "Malicious ShellIntel PowerShell Commandlets",
     "techniques": [
-      "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_set_alias.yml",
-    "title": "Potential PowerShell Obfuscation Using Alias Cmdlets",
-    "techniques": [
-      "t1027",
       "t1059.001"
     ]
   },
@@ -2574,13 +2169,6 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_service_dacl_modification_set_service.yml",
-    "title": "Suspicious Service DACL Modification Via Set-Service Cmdlet - PS",
-    "techniques": [
-      "t1574.011"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_rundll.yml",
     "title": "Invoke-Obfuscation RUNDLL LAUNCHER - PowerShell",
     "techniques": [
@@ -2606,24 +2194,10 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_wallpaper.yml",
-    "title": "Replace Desktop Wallpaper by Powershell",
-    "techniques": [
-      "t1491.001"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_susp_proxy_scripts.yml",
     "title": "Suspicious TCP Tunnel Via PowerShell Script",
     "techniques": [
       "t1090"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_mount_diskimage.yml",
-    "title": "Suspicious Mount-DiskImage",
-    "techniques": [
-      "t1553.005"
     ]
   },
   {
@@ -2689,24 +2263,10 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_ssl_keyword.yml",
-    "title": "Suspicious SSL Connection",
-    "techniques": [
-      "t1573"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_enable_psremoting.yml",
     "title": "Enable Windows Remote Management",
     "techniques": [
       "t1021.006"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_get_childitem_bookmarks.yml",
-    "title": "Automated Collection Bookmarks Using Get-ChildItem PowerShell",
-    "techniques": [
-      "t1217"
     ]
   },
   {
@@ -2746,13 +2306,6 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_ad_group_reco.yml",
-    "title": "AD Groups Or Users Enumeration Using PowerShell - ScriptBlock",
-    "techniques": [
-      "t1069.001"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_adrecon_execution.yml",
     "title": "PowerShell ADRecon Execution",
     "techniques": [
@@ -2764,13 +2317,6 @@
     "title": "Potential Invoke-Mimikatz PowerShell Script",
     "techniques": [
       "t1003"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_cor_profiler.yml",
-    "title": "Registry-Free Process Scope COR_PROFILER",
-    "techniques": [
-      "t1574.012"
     ]
   },
   {
@@ -2831,13 +2377,6 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_get_adgroup.yml",
-    "title": "Active Directory Group Enumeration With Get-AdGroup",
-    "techniques": [
-      "t1069.002"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_remote_session_creation.yml",
     "title": "PowerShell Remote Session Creation",
     "techniques": [
@@ -2874,13 +2413,6 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_run_from_mount_diskimage.yml",
-    "title": "Suspicious Invoke-Item From Mount-DiskImage",
-    "techniques": [
-      "t1553.005"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_frombase64string_archive.yml",
     "title": "Suspicious FromBase64String Usage On Gzip Archive - Ps Script",
     "techniques": [
@@ -2906,13 +2438,6 @@
     "title": "Suspicious New-PSDrive to Admin Share",
     "techniques": [
       "t1021.002"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_get_addefaultdomainpasswordpolicy.yml",
-    "title": "Password Policy Discovery With Get-AdDefaultDomainPasswordPolicy",
-    "techniques": [
-      "t1201"
     ]
   },
   {
@@ -2942,13 +2467,6 @@
     "techniques": [
       "t1078.002",
       "t1098"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_unblock_file.yml",
-    "title": "Suspicious Unblock-File",
-    "techniques": [
-      "t1553.005"
     ]
   },
   {
@@ -3041,13 +2559,6 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_office_comobject_registerxll.yml",
-    "title": "Code Executed Via Office Add-in XLL File",
-    "techniques": [
-      "t1137.006"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_var.yml",
     "title": "Invoke-Obfuscation VAR++ LAUNCHER OBFUSCATION - PowerShell",
     "techniques": [
@@ -3063,24 +2574,10 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_using_set_service_to_hide_services.yml",
-    "title": "Abuse of Service Permissions to Hide Services Via Set-Service - PS",
-    "techniques": [
-      "t1574.011"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_disable_windows_optional_feature.yml",
     "title": "Disable-WindowsOptionalFeature Command PowerShell",
     "techniques": [
       "t1685"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_get_current_user.yml",
-    "title": "Suspicious PowerShell Get Current User",
-    "techniques": [
-      "t1033"
     ]
   },
   {
@@ -3141,24 +2638,9 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_get_gpo.yml",
-    "title": "Suspicious GPO Discovery With Get-GPO",
-    "techniques": [
-      "t1615"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_psasyncshell.yml",
     "title": "PSAsyncShell - Asynchronous TCP Reverse Shell",
     "techniques": [
-      "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_alias_obfscuation.yml",
-    "title": "Potential PowerShell Obfuscation Using Character Join",
-    "techniques": [
-      "t1027",
       "t1059.001"
     ]
   },
@@ -3167,13 +2649,6 @@
     "title": "Powershell Execute Batch Script",
     "techniques": [
       "t1059.003"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_script_with_upload_capabilities.yml",
-    "title": "PowerShell Script With File Upload Capabilities",
-    "techniques": [
-      "t1020"
     ]
   },
   {
@@ -3202,13 +2677,6 @@
     "title": "Computer Discovery And Export Via Get-ADComputer Cmdlet - PowerShell",
     "techniques": [
       "t1033"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_user_profile_tampering.yml",
-    "title": "Potential Persistence Via PowerShell User Profile Using Add-Content",
-    "techniques": [
-      "t1546.013"
     ]
   },
   {
@@ -3248,28 +2716,6 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_get_adcomputer.yml",
-    "title": "Active Directory Computers Enumeration With Get-AdComputer",
-    "techniques": [
-      "t1018",
-      "t1087.002"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_get_acl_service.yml",
-    "title": "Service Registry Permissions Weakness Check",
-    "techniques": [
-      "t1574.011"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_get_process.yml",
-    "title": "Suspicious Process Discovery With Get-Process",
-    "techniques": [
-      "t1057"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_clip.yml",
     "title": "Invoke-Obfuscation Via Use Clip - Powershell",
     "techniques": [
@@ -3289,27 +2735,6 @@
     "title": "Suspicious PowerShell Invocations - Specific",
     "techniques": [
       "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_local_group_reco.yml",
-    "title": "Suspicious Get Local Groups Information - PowerShell",
-    "techniques": [
-      "t1069.001"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_smb_share_reco.yml",
-    "title": "Suspicious Get Information for SMB Share",
-    "techniques": [
-      "t1069.001"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_networkcredential.yml",
-    "title": "Suspicious Connection to Remote Account",
-    "techniques": [
-      "t1110.001"
     ]
   },
   {
@@ -3346,14 +2771,6 @@
     "title": "PowerShell PSAttack",
     "techniques": [
       "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_modification_of_dmsa_link_attribute.yml",
-    "title": "DMSA Link Attributes Modified",
-    "techniques": [
-      "t1078.002",
-      "t1098"
     ]
   },
   {
@@ -3404,13 +2821,6 @@
     "title": "Enumerate Credentials from Windows Credential Manager With PowerShell",
     "techniques": [
       "t1555"
-    ]
-  },
-  {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_hyper_v_condlet.yml",
-    "title": "Suspicious Hyper-V Cmdlets",
-    "techniques": [
-      "t1564.006"
     ]
   },
   {
@@ -3493,13 +2903,6 @@
     ]
   },
   {
-    "file": "rules/windows/powershell/powershell_script/posh_ps_susp_win32_pnpentity.yml",
-    "title": "Powershell Suspicious Win32_PnPEntity",
-    "techniques": [
-      "t1120"
-    ]
-  },
-  {
     "file": "rules/windows/powershell/powershell_script/posh_ps_sensitive_file_discovery.yml",
     "title": "Powershell Sensitive File Discovery",
     "techniques": [
@@ -3545,20 +2948,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/firewall_as/win_firewall_as_failed_load_gpo.yml",
-    "title": "The Windows Defender Firewall Service Failed To Load Group Policy",
-    "techniques": [
-      "t1686.003"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/firewall_as/win_firewall_as_setting_change.yml",
-    "title": "Windows Firewall Settings Have Been Changed",
-    "techniques": [
-      "t1686.003"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/firewall_as/win_firewall_as_delete_rule.yml",
     "title": "A Rule Has Been Deleted From The Windows Firewall Exception List",
     "techniques": [
@@ -3594,13 +2983,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/firewall_as/win_firewall_as_reset_config.yml",
-    "title": "Windows Defender Firewall Has Been Reset To Its Default Configuration",
-    "techniques": [
-      "t1686.003"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/security_mitigations/win_security_mitigations_defender_load_unsigned_dll.yml",
     "title": "Microsoft Defender Blocked from Loading Unsigned DLL",
     "techniques": [
@@ -3619,27 +3001,6 @@
     "title": "DNS Server Error Failed Loading the ServerLevelPluginDLL",
     "techniques": [
       "t1574.001"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/dns_server/win_dns_server_failed_dns_zone_transfer.yml",
-    "title": "Failed DNS Zone Transfer",
-    "techniques": [
-      "t1590.002"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/application/screenconnect/win_app_remote_access_tools_screenconnect_file_transfer.yml",
-    "title": "Remote Access Tool - ScreenConnect File Transfer",
-    "techniques": [
-      "t1059.003"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/application/screenconnect/win_app_remote_access_tools_screenconnect_command_exec.yml",
-    "title": "Remote Access Tool - ScreenConnect Command Execution",
-    "techniques": [
-      "t1059.003"
     ]
   },
   {
@@ -3671,13 +3032,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/application/mssqlserver/win_mssql_failed_logon.yml",
-    "title": "MSSQL Server Failed Logon",
-    "techniques": [
-      "t1110"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/application/msiinstaller/win_software_atera_rmm_agent_install.yml",
     "title": "Atera Agent Installation",
     "techniques": [
@@ -3705,8 +3059,7 @@
     "techniques": [
       "t1068",
       "t1203",
-      "t1210",
-      "t1499.004"
+      "t1210"
     ]
   },
   {
@@ -3766,13 +3119,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/bits_client/win_bits_client_new_job_via_bitsadmin.yml",
-    "title": "New BITS Job Created Via Bitsadmin",
-    "techniques": [
-      "t1197"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/bits_client/win_bits_client_new_transfer_via_ip_address.yml",
     "title": "BITS Transfer Job Download From Direct IP",
     "techniques": [
@@ -3782,13 +3128,6 @@
   {
     "file": "rules/windows/builtin/bits_client/win_bits_client_new_transfer_via_uncommon_tld.yml",
     "title": "BITS Transfer Job With Uncommon Or Suspicious Remote TLD",
-    "techniques": [
-      "t1197"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/bits_client/win_bits_client_new_job_via_powershell.yml",
-    "title": "New BITS Job Created Via PowerShell",
     "techniques": [
       "t1197"
     ]
@@ -3807,13 +3146,6 @@
       "t1069.002",
       "t1087.002",
       "t1482"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/windefend/win_defender_config_change_sample_submission_consent.yml",
-    "title": "Windows Defender Submit Sample Feature Disabled",
-    "techniques": [
-      "t1685"
     ]
   },
   {
@@ -3926,16 +3258,14 @@
     "file": "rules/windows/builtin/appxdeployment_server/win_appxdeployment_server_full_trust_package_installation.yml",
     "title": "Windows AppX Deployment Full Trust Package Installation",
     "techniques": [
-      "t1204.002",
-      "t1553.005"
+      "t1204.002"
     ]
   },
   {
     "file": "rules/windows/builtin/appxdeployment_server/win_appxdeployment_server_unsigned_package_installation.yml",
     "title": "Windows AppX Deployment Unsigned Package Installation",
     "techniques": [
-      "t1204.002",
-      "t1553.005"
+      "t1204.002"
     ]
   },
   {
@@ -3964,13 +3294,6 @@
     "title": "Suspicious Cobalt Strike DNS Beaconing - DNS Client",
     "techniques": [
       "t1071.004"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/dns_client/win_dns_client_ufile_io.yml",
-    "title": "DNS Query To Ufile.io - DNS Client",
-    "techniques": [
-      "t1567.002"
     ]
   },
   {
@@ -4283,20 +3606,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/system/microsoft_windows_ntfs/win_system_volume_shadow_copy_mount.yml",
-    "title": "Volume Shadow Copy Mount",
-    "techniques": [
-      "t1003.002"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/system/microsoft_windows_certification_authority/win_system_adcs_enrollment_request_denied.yml",
-    "title": "Active Directory Certificate Services Denied Certificate Enrollment Request",
-    "techniques": [
-      "t1553.004"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/system/lsasrv/win_system_lsasrv_ntlmv1.yml",
     "title": "NTLMv1 Logon Between Client and Server",
     "techniques": [
@@ -4308,20 +3617,6 @@
     "title": "Critical Hive In Suspicious Location Access Bits Cleared",
     "techniques": [
       "t1003.002"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/system/microsoft_windows_kerberos_key_distribution_center/win_system_kdcsvc_tgs_no_suitable_encryption_key_found.yml",
-    "title": "No Suitable Encryption Key Found For Generating Kerberos Ticket",
-    "techniques": [
-      "t1558.003"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/system/ntfs/win_system_ntfs_vuln_exploit.yml",
-    "title": "NTFS Vulnerability Exploitation",
-    "techniques": [
-      "t1499.001"
     ]
   },
   {
@@ -4342,8 +3637,7 @@
     "file": "rules/windows/builtin/system/microsoft_windows_Iphlpsvc/win_system_isatap_router_address_set.yml",
     "title": "ISATAP Router Address Was Set",
     "techniques": [
-      "t1557",
-      "t1565.002"
+      "t1557"
     ]
   },
   {
@@ -4397,23 +3691,8 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/system/microsoft_windows_windows_update_client/win_system_susp_system_update_error.yml",
-    "title": "Windows Update Error",
-    "techniques": [
-      "t1584"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/iis-configuration/win_iis_logging_etw_disabled.yml",
     "title": "ETW Logging/Processing Option Disabled On IIS Server",
-    "techniques": [
-      "t1505.004",
-      "t1685.001"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/iis-configuration/win_iis_module_removed.yml",
-    "title": "Previously Installed IIS Module Was Removed",
     "techniques": [
       "t1505.004",
       "t1685.001"
@@ -4461,6 +3740,13 @@
     "title": "Scheduled Task Executed Uncommon LOLBIN",
     "techniques": [
       "t1053.005"
+    ]
+  },
+  {
+    "file": "rules/windows/builtin/taskscheduler/win_taskscheduler_susp_schtasks_delete_or_disable.yml",
+    "title": "Important Scheduled Task Deleted or Disabled",
+    "techniques": [
+      "t1489"
     ]
   },
   {
@@ -4530,24 +3816,10 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/msexchange/win_exchange_transportagent_failed.yml",
-    "title": "Failed MSExchange Transport Agent Installation",
-    "techniques": [
-      "t1505.002"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/msexchange/win_exchange_proxyshell_certificate_generation.yml",
     "title": "Certificate Request Export to Exchange Webserver",
     "techniques": [
       "t1505.003"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/msexchange/win_exchange_transportagent.yml",
-    "title": "MSExchange Transport Agent Installation - Builtin",
-    "techniques": [
-      "t1505.002"
     ]
   },
   {
@@ -4569,13 +3841,6 @@
     "title": "Potential Remote Desktop Connection to Non-Domain Host",
     "techniques": [
       "t1219.002"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/ntlm/win_susp_ntlm_auth.yml",
-    "title": "NTLM Logon",
-    "techniques": [
-      "t1550.002"
     ]
   },
   {
@@ -4705,13 +3970,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/security/win_security_external_device.yml",
-    "title": "External Disk Drive Or USB Storage Device Was Recognized By The System",
-    "techniques": [
-      "t1091"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/security/win_security_invoke_obfuscation_clip_services_security.yml",
     "title": "Invoke-Obfuscation CLIP+ Launcher - Security",
     "techniques": [
@@ -4765,13 +4023,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/security/win_security_susp_time_modification.yml",
-    "title": "Unauthorized System Time Modification",
-    "techniques": [
-      "t1070.006"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/security/win_security_gpo_scheduledtasks.yml",
     "title": "Persistence and Execution at Scale via GPO Scheduled Task",
     "techniques": [
@@ -4798,13 +4049,6 @@
     "techniques": [
       "t1484.001",
       "t1547"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/security/win_security_tap_driver_installation.yml",
-    "title": "Tap Driver Installation - Security",
-    "techniques": [
-      "t1048"
     ]
   },
   {
@@ -4855,13 +4099,6 @@
     "techniques": [
       "t1027",
       "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/security/win_security_admin_share_access.yml",
-    "title": "Access To ADMIN$ Network Share",
-    "techniques": [
-      "t1021.002"
     ]
   },
   {
@@ -5015,13 +4252,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/security/win_security_user_logoff.yml",
-    "title": "User Logoff Event",
-    "techniques": [
-      "t1531"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/security/win_security_susp_possible_shadow_credentials_added.yml",
     "title": "Possible Shadow Credentials Added",
     "techniques": [
@@ -5051,20 +4281,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/security/win_security_codeintegrity_check_failure.yml",
-    "title": "Failed Code Integrity Checks",
-    "techniques": [
-      "t1027.001"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/security/win_security_registry_permissions_weakness_check.yml",
-    "title": "Service Registry Key Read Access Request",
-    "techniques": [
-      "t1574.011"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/security/win_security_impacket_psexec.yml",
     "title": "Impacket PsExec Execution",
     "techniques": [
@@ -5076,13 +4292,6 @@
     "title": "Protected Storage Service Access",
     "techniques": [
       "t1021.002"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/security/win_security_user_creation.yml",
-    "title": "Local User Creation",
-    "techniques": [
-      "t1136.001"
     ]
   },
   {
@@ -5168,13 +4377,6 @@
     "title": "Suspicious Remote Logon with Explicit Credentials",
     "techniques": [
       "t1078"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/security/win_security_disable_event_auditing.yml",
-    "title": "Windows Event Auditing Disabled",
-    "techniques": [
-      "t1685.001"
     ]
   },
   {
@@ -5297,13 +4499,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/security/win_security_add_remove_computer.yml",
-    "title": "Add or Remove Computer from DC",
-    "techniques": [
-      "t1207"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/security/win_security_dpapi_domain_backupkey_extraction.yml",
     "title": "DPAPI Domain Backup Key Extraction",
     "techniques": [
@@ -5338,13 +4533,6 @@
     "title": "Powerview Add-DomainObjectAcl DCSync AD Extend Right",
     "techniques": [
       "t1098"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/security/win_security_vssaudit_secevent_source_registration.yml",
-    "title": "VSSAudit Security Event Source Registration",
-    "techniques": [
-      "t1003.002"
     ]
   },
   {
@@ -5445,27 +4633,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/security/win_security_kerberos_coercion_via_dns_object.yml",
-    "title": "Potential Kerberos Coercion by Spoofing SPNs via DNS Manipulation",
-    "techniques": [
-      "t1557.003"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/security/account_management/win_security_susp_logon_newcredentials.yml",
-    "title": "Outgoing Logon with New Credentials",
-    "techniques": [
-      "t1550"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/security/account_management/win_security_member_added_security_enabled_global_group.yml",
-    "title": "A Member Was Added to a Security-Enabled Global Group",
-    "techniques": [
-      "t1098"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/security/account_management/win_security_rdp_localhost_login.yml",
     "title": "RDP Login from Localhost",
     "techniques": [
@@ -5503,20 +4670,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/security/account_management/win_security_member_removed_security_enabled_global_group.yml",
-    "title": "A Member Was Removed From a Security-Enabled Global Group",
-    "techniques": [
-      "t1098"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/security/account_management/win_security_susp_wmi_login.yml",
-    "title": "Successful Account Login Via WMI",
-    "techniques": [
-      "t1047"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/security/account_management/win_security_pass_the_hash_2.yml",
     "title": "Pass the Hash Activity 2",
     "techniques": [
@@ -5549,22 +4702,6 @@
     ]
   },
   {
-    "file": "rules/windows/builtin/security/account_management/win_security_security_enabled_global_group_deleted.yml",
-    "title": "A Security-Enabled Global Group Was Deleted",
-    "techniques": [
-      "t1098"
-    ]
-  },
-  {
-    "file": "rules/windows/builtin/security/account_management/win_security_admin_rdp_login.yml",
-    "title": "Admin User Remote Logon",
-    "techniques": [
-      "t1078.001",
-      "t1078.002",
-      "t1078.003"
-    ]
-  },
-  {
     "file": "rules/windows/builtin/security/object_access/win_security_wfp_endpoint_agent_blocked.yml",
     "title": "Windows Filtering Platform Blocked Connection From EDR Agent Binary",
     "techniques": [
@@ -5576,13 +4713,6 @@
     "title": "Potential Process Hollowing Activity",
     "techniques": [
       "t1055.012"
-    ]
-  },
-  {
-    "file": "rules/windows/raw_access_thread/raw_access_thread_susp_disk_access_using_uncommon_tools.yml",
-    "title": "Potential Defense Evasion Via Raw Disk Access By Uncommon Tools",
-    "techniques": [
-      "t1006"
     ]
   },
   {
@@ -5618,14 +4748,6 @@
     "title": "Abusable DLL Potential Sideloading From Suspicious Location",
     "techniques": [
       "t1059"
-    ]
-  },
-  {
-    "file": "rules/windows/image_load/image_load_dll_rstrtmgr_uncommon_load.yml",
-    "title": "Load Of RstrtMgr.DLL By An Uncommon Process",
-    "techniques": [
-      "t1486",
-      "t1685"
     ]
   },
   {
@@ -5750,13 +4872,6 @@
     "techniques": [
       "t1003.001",
       "t1218"
-    ]
-  },
-  {
-    "file": "rules/windows/image_load/image_load_susp_python_image_load.yml",
-    "title": "Python Image Load By Non-Python Process",
-    "techniques": [
-      "t1027.002"
     ]
   },
   {
@@ -6109,13 +5224,6 @@
     ]
   },
   {
-    "file": "rules/windows/image_load/image_load_dll_azure_microsoft_account_token_provider_dll_load.yml",
-    "title": "Potential Azure Browser SSO Abuse",
-    "techniques": [
-      "t1574.001"
-    ]
-  },
-  {
     "file": "rules/windows/image_load/image_load_office_vbadll_load.yml",
     "title": "VBA DLL Loaded Via Office Application",
     "techniques": [
@@ -6148,13 +5256,6 @@
     "title": "DLL Load By System Process From Suspicious Locations",
     "techniques": [
       "t1070"
-    ]
-  },
-  {
-    "file": "rules/windows/image_load/image_load_side_load_7za.yml",
-    "title": "Potential 7za.DLL Sideloading",
-    "techniques": [
-      "t1574.001"
     ]
   },
   {
@@ -6308,21 +5409,6 @@
     ]
   },
   {
-    "file": "rules/windows/file/file_access/file_access_win_susp_process_access_browser_cred_files.yml",
-    "title": "Suspicious File Access to Browser Credential Storage",
-    "techniques": [
-      "t1217",
-      "t1555.003"
-    ]
-  },
-  {
-    "file": "rules/windows/file/file_event/file_event_win_ntds_dit_creation.yml",
-    "title": "NTDS.DIT Created",
-    "techniques": [
-      "t1003.003"
-    ]
-  },
-  {
     "file": "rules/windows/file/file_event/file_event_win_susp_lnk_double_extension.yml",
     "title": "Suspicious LNK Double Extension File Created",
     "techniques": [
@@ -6334,13 +5420,6 @@
     "title": "EVTX Created In Uncommon Location",
     "techniques": [
       "t1685.001"
-    ]
-  },
-  {
-    "file": "rules/windows/file/file_event/file_event_win_susp_vscode_powershell_profile.yml",
-    "title": "VsCode Powershell Profile Modification",
-    "techniques": [
-      "t1546.013"
     ]
   },
   {
@@ -6356,13 +5435,6 @@
     "title": "Creation Of Non-Existent System DLL",
     "techniques": [
       "t1574.001"
-    ]
-  },
-  {
-    "file": "rules/windows/file/file_event/file_event_win_office_macro_files_created.yml",
-    "title": "Office Macro File Creation",
-    "techniques": [
-      "t1566.001"
     ]
   },
   {
@@ -6384,20 +5456,6 @@
     "title": "Installation of TeamViewer Desktop",
     "techniques": [
       "t1219.002"
-    ]
-  },
-  {
-    "file": "rules/windows/file/file_event/file_event_win_sysinternals_psexec_service.yml",
-    "title": "PsExec Service File Creation",
-    "techniques": [
-      "t1569.002"
-    ]
-  },
-  {
-    "file": "rules/windows/file/file_event/file_event_win_writing_local_admin_share.yml",
-    "title": "Writing Local Admin Share",
-    "techniques": [
-      "t1546.002"
     ]
   },
   {
@@ -6445,24 +5503,10 @@
     ]
   },
   {
-    "file": "rules/windows/file/file_event/file_event_win_creation_scr_binary_file.yml",
-    "title": "Suspicious Screensaver Binary File Creation",
-    "techniques": [
-      "t1546.002"
-    ]
-  },
-  {
     "file": "rules/windows/file/file_event/file_event_win_iphlpapi_dll_sideloading.yml",
     "title": "Malicious DLL File Dropped in the Teams or OneDrive Folder",
     "techniques": [
       "t1574.001"
-    ]
-  },
-  {
-    "file": "rules/windows/file/file_event/file_event_win_susp_powershell_profile.yml",
-    "title": "PowerShell Profile Modification",
-    "techniques": [
-      "t1546.013"
     ]
   },
   {
@@ -6550,15 +5594,6 @@
     ]
   },
   {
-    "file": "rules/windows/file/file_event/file_event_win_creation_deno.yml",
-    "title": "Suspicious Deno File Written from Remote Source",
-    "techniques": [
-      "t1059.007",
-      "t1105",
-      "t1204"
-    ]
-  },
-  {
     "file": "rules/windows/file/file_event/file_event_win_rclone_config_files.yml",
     "title": "Rclone Config File Creation",
     "techniques": [
@@ -6630,13 +5665,6 @@
     "title": "Desktop.INI Created by Uncommon Process",
     "techniques": [
       "t1547.009"
-    ]
-  },
-  {
-    "file": "rules/windows/file/file_event/file_event_win_remote_access_tools_screenconnect_remote_file.yml",
-    "title": "Remote Access Tool - ScreenConnect Temporary File",
-    "techniques": [
-      "t1059.003"
     ]
   },
   {
@@ -6914,13 +5942,6 @@
     ]
   },
   {
-    "file": "rules/windows/file/file_event/file_event_win_csharp_compile_artefact.yml",
-    "title": "Dynamic CSharp Compile Artefact",
-    "techniques": [
-      "t1027.004"
-    ]
-  },
-  {
     "file": "rules/windows/file/file_event/file_event_win_office_susp_file_extension.yml",
     "title": "File With Uncommon Extension Created By An Office Application",
     "techniques": [
@@ -6989,13 +6010,6 @@
     "title": "Suspicious Scheduled Task Write to System32 Tasks",
     "techniques": [
       "t1053"
-    ]
-  },
-  {
-    "file": "rules/windows/file/file_event/file_event_win_office_addin_persistence.yml",
-    "title": "Potential Persistence Via Microsoft Office Add-In",
-    "techniques": [
-      "t1137.006"
     ]
   },
   {
@@ -7202,13 +6216,6 @@
     ]
   },
   {
-    "file": "rules/windows/file/file_event/file_event_win_office_macro_files_downloaded.yml",
-    "title": "Office Macro File Download",
-    "techniques": [
-      "t1566.001"
-    ]
-  },
-  {
     "file": "rules/windows/file/file_event/file_event_win_shell_write_susp_files_extensions.yml",
     "title": "Windows Binaries Write Suspicious Extensions",
     "techniques": [
@@ -7309,13 +6316,6 @@
   {
     "file": "rules/windows/file/file_delete/file_delete_win_delete_prefetch.yml",
     "title": "Prefetch File Deleted",
-    "techniques": [
-      "t1070.004"
-    ]
-  },
-  {
-    "file": "rules/windows/file/file_delete/file_delete_win_delete_teamviewer_logs.yml",
-    "title": "TeamViewer Log File Deleted",
     "techniques": [
       "t1070.004"
     ]
@@ -7572,26 +6572,12 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_regini_execution.yml",
-    "title": "Registry Modification Via Regini.EXE",
-    "techniques": [
-      "t1112"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_powershell_xor_commandline.yml",
     "title": "Suspicious XOR Encoded PowerShell Command",
     "techniques": [
       "t1027",
       "t1059.001",
       "t1140"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_odbcconf_driver_install.yml",
-    "title": "Driver/DLL Installation Via Odbcconf.EXE",
-    "techniques": [
-      "t1218.008"
     ]
   },
   {
@@ -7661,13 +6647,6 @@
     "title": "PUA - Rclone Execution",
     "techniques": [
       "t1567.002"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_odbcconf_response_file.yml",
-    "title": "Response File Execution Via Odbcconf.EXE",
-    "techniques": [
-      "t1218.008"
     ]
   },
   {
@@ -7965,13 +6944,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_powershell_applocker_policy_discovery_via_get_applockerpolicy.yml",
-    "title": "PowerShell AppLocker Policy Discovery Via Get-AppLockerPolicy",
-    "techniques": [
-      "t1518.001"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_reg_susp_paths.yml",
     "title": "Reg Add Suspicious Paths",
     "techniques": [
@@ -8044,13 +7016,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_sysinternals_eula_accepted.yml",
-    "title": "Potential Execution of Sysinternals Tools",
-    "techniques": [
-      "t1588.002"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_lsass_process_clone.yml",
     "title": "Potential Credential Dumping Via LSASS Process Clone",
     "techniques": [
@@ -8108,13 +7073,6 @@
     "title": "Compress Data and Lock With Password for Exfiltration With WINZIP",
     "techniques": [
       "t1560.001"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_net_view_share_and_sessions_enum.yml",
-    "title": "Share And Session Enumeration Using Net.EXE",
-    "techniques": [
-      "t1018"
     ]
   },
   {
@@ -8286,13 +7244,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_sdbinst_susp_extension.yml",
-    "title": "Uncommon Extension Shim Database Installation Via Sdbinst.EXE",
-    "techniques": [
-      "t1546.011"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_hktl_netexec.yml",
     "title": "HackTool - NetExec Execution",
     "techniques": [
@@ -8383,13 +7334,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_powershell_non_interactive_execution.yml",
-    "title": "Non Interactive PowerShell Process Spawned",
-    "techniques": [
-      "t1059.001"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_powershell_zip_compress.yml",
     "title": "Folder Compress To Potentially Suspicious Output Via Compress-Archive Cmdlet",
     "techniques": [
@@ -8404,32 +7348,11 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_odbcconf_response_file_susp.yml",
-    "title": "Suspicious Response File Execution Via Odbcconf.EXE",
-    "techniques": [
-      "t1218.008"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_bginfo_suspicious_child_process.yml",
     "title": "Suspicious Child Process Of BgInfo.EXE",
     "techniques": [
       "t1059.005",
       "t1218"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_rar_compress_data.yml",
-    "title": "Files Added To An Archive Using Rar.EXE",
-    "techniques": [
-      "t1560.001"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_regasm_regsvcs_uncommon_location_execution.yml",
-    "title": "Potentially Suspicious Execution Of Regasm/Regsvcs From Uncommon Location",
-    "techniques": [
-      "t1218.009"
     ]
   },
   {
@@ -8440,18 +7363,10 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_jsc_execution.yml",
-    "title": "JScript Compiler Execution",
-    "techniques": [
-      "t1127"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_susp_registry_modification_of_ms_setting_protocol_handler.yml",
     "title": "Registry Modification of MS-settings Protocol Handler",
     "techniques": [
       "t1112",
-      "t1546.001",
       "t1548.002"
     ]
   },
@@ -8555,13 +7470,6 @@
     "techniques": [
       "t1105",
       "t1218"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_mstsc_run_local_rdp_file.yml",
-    "title": "Mstsc.EXE Execution With Local RDP File",
-    "techniques": [
-      "t1219.002"
     ]
   },
   {
@@ -9099,13 +8007,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_git_susp_clone.yml",
-    "title": "Suspicious Git Clone",
-    "techniques": [
-      "t1593.003"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_agentexecutor_potential_abuse.yml",
     "title": "AgentExecutor PowerShell Execution",
     "techniques": [
@@ -9287,13 +8188,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_hostname_execution.yml",
-    "title": "Suspicious Execution of Hostname",
-    "techniques": [
-      "t1082"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_office_outlook_execution_from_temp.yml",
     "title": "Suspicious Execution From Outlook Temporary Folder",
     "techniques": [
@@ -9337,25 +8231,11 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_powershell_create_service.yml",
-    "title": "New Service Creation Using PowerShell",
-    "techniques": [
-      "t1543.003"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_schtasks_reg_loader.yml",
     "title": "Scheduled Task Executing Payload from Registry",
     "techniques": [
       "t1053.005",
       "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_sc_query_interesting_services.yml",
-    "title": "Interesting Service Enumeration Via Sc.EXE",
-    "techniques": [
-      "t1003"
     ]
   },
   {
@@ -9423,6 +8303,13 @@
     ]
   },
   {
+    "file": "rules/windows/process_creation/proc_creation_win_schtasks_delete.yml",
+    "title": "Delete Important Scheduled Task",
+    "techniques": [
+      "t1489"
+    ]
+  },
+  {
     "file": "rules/windows/process_creation/proc_creation_win_atbroker_uncommon_ats_execution.yml",
     "title": "Uncommon  Assistive Technology Applications Execution Via AtBroker.EXE",
     "techniques": [
@@ -9460,24 +8347,10 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_odbcconf_exec_susp_locations.yml",
-    "title": "Odbcconf.EXE Suspicious DLL Location",
-    "techniques": [
-      "t1218.008"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_pua_nps.yml",
     "title": "PUA - NPS Tunneling Tool Execution",
     "techniques": [
       "t1090"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_bitlockertogo_execution.yml",
-    "title": "BitLockerTogo.EXE Execution",
-    "techniques": [
-      "t1218"
     ]
   },
   {
@@ -9493,13 +8366,6 @@
     "title": "Add SafeBoot Keys Via Reg Utility",
     "techniques": [
       "t1685"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_sc_change_sevice_image_path_by_non_admin.yml",
-    "title": "Possible Privilege Escalation via Weak Service Permissions",
-    "techniques": [
-      "t1574.011"
     ]
   },
   {
@@ -9569,24 +8435,10 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_cmd_assoc_execution.yml",
-    "title": "Change Default File Association Via Assoc",
-    "techniques": [
-      "t1546.001"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_auditpol_susp_execution.yml",
     "title": "Audit Policy Tampering Via Auditpol",
     "techniques": [
       "t1685.001"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_reg_machineguid.yml",
-    "title": "Suspicious Query of MachineGUID",
-    "techniques": [
-      "t1082"
     ]
   },
   {
@@ -9622,13 +8474,6 @@
     "title": "Potential Powershell ReverseShell Connection",
     "techniques": [
       "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_powershell_hide_services_via_set_service.yml",
-    "title": "Abuse of Service Permissions to Hide Services Via Set-Service",
-    "techniques": [
-      "t1574.011"
     ]
   },
   {
@@ -9716,13 +8561,6 @@
     "title": "Dropping Of Password Filter DLL",
     "techniques": [
       "t1556.002"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_odbcconf_register_dll_regsvr_susp.yml",
-    "title": "Potentially Suspicious DLL Registered Via Odbcconf.EXE",
-    "techniques": [
-      "t1218.008"
     ]
   },
   {
@@ -9847,13 +8685,6 @@
     "title": "HackTool - Quarks PwDump Execution",
     "techniques": [
       "t1003.002"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_reg_service_imagepath_change.yml",
-    "title": "Changing Existing Service ImagePath Value Via Reg.EXE",
-    "techniques": [
-      "t1574.011"
     ]
   },
   {
@@ -10055,13 +8886,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_sc_create_service.yml",
-    "title": "New Service Creation Using Sc.EXE",
-    "techniques": [
-      "t1543.003"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_sqlcmd_veeam_dump.yml",
     "title": "VeeamBackup Database Credentials Dump Via Sqlcmd.EXE",
     "techniques": [
@@ -10186,13 +9010,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_clip_execution.yml",
-    "title": "Data Copied To Clipboard Via Clip.EXE",
-    "techniques": [
-      "t1115"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_reg_desktop_background_change.yml",
     "title": "Potentially Suspicious Desktop Background Change Using Reg.EXE",
     "techniques": [
@@ -10238,13 +9055,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_taskmgr_susp_child_process.yml",
-    "title": "New Process Created Via Taskmgr.EXE",
-    "techniques": [
-      "t1036"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_lolbin_diantz_remote_cab.yml",
     "title": "Suspicious Diantz Download and Compress Into a CAB File",
     "techniques": [
@@ -10277,14 +9087,6 @@
     "title": "Unusual Child Process of dns.exe",
     "techniques": [
       "t1133"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_susp_local_system_owner_account_discovery.yml",
-    "title": "Local Accounts Discovery",
-    "techniques": [
-      "t1033",
-      "t1087.001"
     ]
   },
   {
@@ -10554,13 +9356,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_regasm_regsvcs_uncommon_extension_execution.yml",
-    "title": "Potentially Suspicious Execution Of Regasm/Regsvcs With Uncommon Extension",
-    "techniques": [
-      "t1218.009"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_sysprep_appdata.yml",
     "title": "Sysprep on AppData Folder",
     "techniques": [
@@ -10688,14 +9483,6 @@
     "title": "Vulnerable Driver Blocklist Registry Tampering Via CommandLine",
     "techniques": [
       "t1685"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_powershell_encoding_patterns.yml",
-    "title": "Potential Encoded PowerShell Patterns In CommandLine",
-    "techniques": [
-      "t1027",
-      "t1059.001"
     ]
   },
   {
@@ -10862,13 +9649,6 @@
     "title": "New Firewall Rule Added Via Netsh.EXE",
     "techniques": [
       "t1686.003"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_runonce_execution.yml",
-    "title": "Run Once Task Execution as Configured in Registry",
-    "techniques": [
-      "t1112"
     ]
   },
   {
@@ -11055,27 +9835,6 @@
     "title": "Potential Credential Dumping Via WER",
     "techniques": [
       "t1003.001"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_dirlister_execution.yml",
-    "title": "DirLister Execution",
-    "techniques": [
-      "t1083"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_sc_sdset_modification.yml",
-    "title": "Service Security Descriptor Tampering Via Sc.EXE",
-    "techniques": [
-      "t1574.011"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_susp_use_of_te_bin.yml",
-    "title": "Malicious Windows Script Components File Execution by TAEF Detection",
-    "techniques": [
-      "t1218"
     ]
   },
   {
@@ -11300,22 +10059,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_hh_chm_execution.yml",
-    "title": "HH.EXE Execution",
-    "techniques": [
-      "t1218.001"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_msix_ai_stub_execution.yml",
-    "title": "Windows MSIX Package Support Framework AI_STUBS Execution",
-    "techniques": [
-      "t1204.002",
-      "t1218",
-      "t1553.005"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_susp_velociraptor_child_process.yml",
     "title": "Suspicious Velociraptor Child Process",
     "techniques": [
@@ -11361,15 +10104,7 @@
     "file": "rules/windows/process_creation/proc_creation_win_sc_service_tamper_for_persistence.yml",
     "title": "Potential Persistence Attempt Via Existing Service Tampering",
     "techniques": [
-      "t1543.003",
-      "t1574.011"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_odbcconf_driver_install_susp.yml",
-    "title": "Suspicious Driver/DLL Installation Via Odbcconf.EXE",
-    "techniques": [
-      "t1218.008"
+      "t1543.003"
     ]
   },
   {
@@ -11453,20 +10188,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_sc_sdset_hide_sevices.yml",
-    "title": "Service DACL Abuse To Hide Services Via Sc.EXE",
-    "techniques": [
-      "t1574.011"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_cmd_del_execution.yml",
-    "title": "File Deletion Via Del",
-    "techniques": [
-      "t1070.004"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_bitsadmin_download.yml",
     "title": "File Download Via Bitsadmin",
     "techniques": [
@@ -11547,13 +10268,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_reg_screensaver.yml",
-    "title": "Suspicious ScreenSave Change by Reg.exe",
-    "techniques": [
-      "t1546.002"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_dism_enable_powershell_web_access_feature.yml",
     "title": "PowerShell Web Access Feature Enabled Via DISM",
     "techniques": [
@@ -11625,13 +10339,6 @@
     "techniques": [
       "t1027.010",
       "t1059.006"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_net_start_service.yml",
-    "title": "Start Windows Service Via Net.EXE",
-    "techniques": [
-      "t1569.002"
     ]
   },
   {
@@ -11720,23 +10427,6 @@
     "title": "Disabling Windows Defender WMI Autologger Session via Reg.exe",
     "techniques": [
       "t1685"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_odbcconf_uncommon_child_process.yml",
-    "title": "Uncommon Child Process Spawned By Odbcconf.EXE",
-    "techniques": [
-      "t1218.008"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_findstr_subfolder_search.yml",
-    "title": "Insensitive Subfolder Search Via Findstr.EXE",
-    "techniques": [
-      "t1105",
-      "t1218",
-      "t1552.001",
-      "t1564.004"
     ]
   },
   {
@@ -11858,13 +10548,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_remote_time_discovery.yml",
-    "title": "Discovery of a System Time",
-    "techniques": [
-      "t1124"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_aspnet_compiler_susp_child_process.yml",
     "title": "Suspicious Child Process of AspNetCompiler",
     "techniques": [
@@ -11876,13 +10559,6 @@
     "title": "Diskshadow Script Mode - Uncommon Script Extension Execution",
     "techniques": [
       "t1218"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_remote_access_tools_screenconnect_remote_execution.yml",
-    "title": "Remote Access Tool - ScreenConnect Remote Command Execution",
-    "techniques": [
-      "t1059.003"
     ]
   },
   {
@@ -11913,13 +10589,6 @@
       "t1003.002",
       "t1003.003",
       "t1218"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_registry_privilege_escalation_via_service_key.yml",
-    "title": "Potential Privilege Escalation via Service Permissions Weakness",
-    "techniques": [
-      "t1574.011"
     ]
   },
   {
@@ -11997,14 +10666,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_browsers_chromium_headless_exec.yml",
-    "title": "Browser Execution In Headless Mode",
-    "techniques": [
-      "t1105",
-      "t1564.003"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_susp_network_scan_loop.yml",
     "title": "Suspicious Scan Loop Network",
     "techniques": [
@@ -12072,13 +10733,6 @@
     "techniques": [
       "t1036.005",
       "t1218"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_cmd_assoc_tamper_exe_file_association.yml",
-    "title": "Change Default File Association To Executable Via Assoc",
-    "techniques": [
-      "t1546.001"
     ]
   },
   {
@@ -12193,13 +10847,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_browsers_chromium_susp_load_extension.yml",
-    "title": "Suspicious Chromium Browser Instance Executed With Custom Extension",
-    "techniques": [
-      "t1176.001"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_hktl_execution_via_pe_metadata.yml",
     "title": "Hacktool Execution - PE Metadata",
     "techniques": [
@@ -12273,20 +10920,6 @@
     "techniques": [
       "t1027",
       "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_pua_crassus.yml",
-    "title": "PUA - Crassus Execution",
-    "techniques": [
-      "t1590.001"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_wmic_recon_group.yml",
-    "title": "Local Groups Reconnaissance Via Wmic.EXE",
-    "techniques": [
-      "t1069.001"
     ]
   },
   {
@@ -12535,6 +11168,7 @@
     "file": "rules/windows/process_creation/proc_creation_win_susp_service_tamper.yml",
     "title": "Suspicious Windows Service Tampering",
     "techniques": [
+      "t1489",
       "t1685"
     ]
   },
@@ -12628,13 +11262,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_discovery_via_reg_queries.yml",
-    "title": "System Information Discovery via Registry Queries",
-    "techniques": [
-      "t1082"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_hktl_secutyxploded.yml",
     "title": "HackTool - SecurityXploded Execution",
     "techniques": [
@@ -12707,24 +11334,10 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_where_browser_data_recon.yml",
-    "title": "Suspicious Where Execution",
-    "techniques": [
-      "t1217"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_lolbin_pcwrun_follina.yml",
     "title": "Execute Pcwrun.EXE To Leverage Follina",
     "techniques": [
       "t1218"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_powershell_msexchange_transport_agent.yml",
-    "title": "MSExchange Transport Agent Installation",
-    "techniques": [
-      "t1505.002"
     ]
   },
   {
@@ -12772,13 +11385,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_notepad_local_passwd_discovery.yml",
-    "title": "Notepad Password Files Discovery",
-    "techniques": [
-      "t1083"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_susp_copy_system_dir_lolbin.yml",
     "title": "LOL-Binary Copied From System Directory",
     "techniques": [
@@ -12814,13 +11420,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_systeminfo_execution.yml",
-    "title": "Suspicious Execution of Systeminfo",
-    "techniques": [
-      "t1082"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_csc_susp_parent.yml",
     "title": "Csc.EXE Execution Form Potentially Suspicious Parent",
     "techniques": [
@@ -12843,13 +11442,6 @@
     "techniques": [
       "t1003.001",
       "t1218"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_security_susp_node_js_execution.yml",
-    "title": "NodeJS Execution of JavaScript File",
-    "techniques": [
-      "t1059.007"
     ]
   },
   {
@@ -12912,33 +11504,11 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_sdbinst_shim_persistence.yml",
-    "title": "Potential Shim Database Persistence via Sdbinst.EXE",
-    "techniques": [
-      "t1546.011"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_browsers_chromium_load_extension.yml",
-    "title": "Chromium Browser Instance Executed With Custom Extension",
-    "techniques": [
-      "t1176.001"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_hktl_covenant.yml",
     "title": "HackTool - Covenant PowerShell Launcher",
     "techniques": [
       "t1059.001",
       "t1564.003"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_virtualbox_execution.yml",
-    "title": "Virtualbox Driver Installation or Starting of VMs",
-    "techniques": [
-      "t1564",
-      "t1564.006"
     ]
   },
   {
@@ -13037,16 +11607,12 @@
     "title": "Potential Suspicious Activity Using SeCEdit",
     "techniques": [
       "t1082",
-      "t1505.005",
       "t1546.007",
       "t1546.008",
       "t1547.001",
-      "t1547.002",
-      "t1547.010",
       "t1547.014",
       "t1556.002",
       "t1557",
-      "t1564.002",
       "t1574.007",
       "t1685",
       "t1685.001"
@@ -13121,13 +11687,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_quickassist_execution.yml",
-    "title": "QuickAssist Execution",
-    "techniques": [
-      "t1219.002"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_regedit_import_keys.yml",
     "title": "Imports Registry Key From a File",
     "techniques": [
@@ -13191,25 +11750,10 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_net_use_network_connections_discovery.yml",
-    "title": "System Network Connections Discovery Via Net.EXE",
-    "techniques": [
-      "t1049"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_gpg4win_portable_execution.yml",
     "title": "Portable Gpg.EXE Execution",
     "techniques": [
       "t1486"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_tar_compression.yml",
-    "title": "Compressed File Creation Via Tar.EXE",
-    "techniques": [
-      "t1560",
-      "t1560.001"
     ]
   },
   {
@@ -13458,13 +12002,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_fsutil_drive_enumeration.yml",
-    "title": "Fsutil Drive Enumeration",
-    "techniques": [
-      "t1120"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_wmi_password_never_expire.yml",
     "title": "Password Set to Never Expire via WMI",
     "techniques": [
@@ -13479,13 +12016,6 @@
       "t1059.001",
       "t1059.003",
       "t1105"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_odbcconf_register_dll_regsvr.yml",
-    "title": "New DLL Registered Via Odbcconf.EXE",
-    "techniques": [
-      "t1218.008"
     ]
   },
   {
@@ -13628,25 +12158,11 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_cmd_dir_execution.yml",
-    "title": "File And SubFolder Enumeration Via Dir Command",
-    "techniques": [
-      "t1217"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_hktl_invoke_obfuscation_stdin.yml",
     "title": "Invoke-Obfuscation STDIN+ Launcher",
     "techniques": [
       "t1027",
       "t1059.001"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_python_adidnsdump.yml",
-    "title": "PUA - Adidnsdump Execution",
-    "techniques": [
-      "t1018"
     ]
   },
   {
@@ -13664,17 +12180,17 @@
     ]
   },
   {
+    "file": "rules/windows/process_creation/proc_creation_win_schtasks_disable.yml",
+    "title": "Disable Important Scheduled Task",
+    "techniques": [
+      "t1489"
+    ]
+  },
+  {
     "file": "rules/windows/process_creation/proc_creation_win_susp_filefix_execution_pattern.yml",
     "title": "Suspicious FileFix Execution Pattern",
     "techniques": [
       "t1204.004"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_regasm_no_flag_or_dll_execution.yml",
-    "title": "RegAsm.EXE Execution Without CommandLine Flags or Files",
-    "techniques": [
-      "t1218.009"
     ]
   },
   {
@@ -13727,15 +12243,6 @@
     "title": "PUA - 3Proxy Execution",
     "techniques": [
       "t1572"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_nltest_execution.yml",
-    "title": "Nltest.EXE Execution",
-    "techniques": [
-      "t1016",
-      "t1018",
-      "t1482"
     ]
   },
   {
@@ -13817,6 +12324,13 @@
     "title": "IIS Native-Code Module Command Line Installation",
     "techniques": [
       "t1505.003"
+    ]
+  },
+  {
+    "file": "rules/windows/process_creation/proc_creation_win_schtasks_delete_all.yml",
+    "title": "Delete All Scheduled Tasks",
+    "techniques": [
+      "t1489"
     ]
   },
   {
@@ -13994,13 +12508,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_registry_special_accounts_hide_user.yml",
-    "title": "Hiding User Account Via SpecialAccounts Registry Key - CommandLine",
-    "techniques": [
-      "t1564.002"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_cmd_mklink_shadow_copies_access_symlink.yml",
     "title": "VolumeShadowCopy Symlink Creation Via Mklink",
     "techniques": [
@@ -14013,13 +12520,6 @@
     "title": "Whoami.EXE Execution Anomaly",
     "techniques": [
       "t1033"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_net_share_unmount.yml",
-    "title": "Unmount Share Via Net.EXE",
-    "techniques": [
-      "t1070.005"
     ]
   },
   {
@@ -14091,7 +12591,6 @@
     "file": "rules/windows/process_creation/proc_creation_win_dns_exfiltration_tools_execution.yml",
     "title": "DNS Exfiltration and Tunneling Tools Execution",
     "techniques": [
-      "t1048.001",
       "t1071.004",
       "t1132.001"
     ]
@@ -14161,13 +12660,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_netsh_fw_rules_discovery.yml",
-    "title": "Firewall Configuration Discovery Via Netsh.EXE",
-    "techniques": [
-      "t1016"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_susp_inline_win_api_access.yml",
     "title": "Potential WinAPI Calls Via CommandLine",
     "techniques": [
@@ -14234,14 +12726,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_susp_proc_wrong_parent.yml",
-    "title": "Windows Processes Suspicious Parent Directory",
-    "techniques": [
-      "t1036.003",
-      "t1036.005"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_wmic_service_startup_change.yml",
     "title": "Service Startup Type Change Via Wmic.EXE",
     "techniques": [
@@ -14278,7 +12762,6 @@
     "file": "rules/windows/process_creation/proc_creation_win_control_panel_item.yml",
     "title": "Control Panel Items",
     "techniques": [
-      "t1218.002",
       "t1546"
     ]
   },
@@ -14355,13 +12838,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_hktl_hashcat.yml",
-    "title": "HackTool - Hashcat Password Cracker Execution",
-    "techniques": [
-      "t1110.002"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_svchost_termserv_proc_spawn.yml",
     "title": "Terminal Service Process Spawn",
     "techniques": [
@@ -14399,13 +12875,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_net_use_mount_share.yml",
-    "title": "Windows Share Mount Via Net.EXE",
-    "techniques": [
-      "t1021.002"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_susp_embed_exe_lnk.yml",
     "title": "Hidden Powershell in Link File Pattern",
     "techniques": [
@@ -14440,13 +12909,6 @@
     "techniques": [
       "t1021.001",
       "t1112"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_regedit_export_keys.yml",
-    "title": "Exports Registry Key To a File",
-    "techniques": [
-      "t1012"
     ]
   },
   {
@@ -14535,13 +12997,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_lolbin_pcwrun.yml",
-    "title": "Indirect Command Execution By Program Compatibility Wizard",
-    "techniques": [
-      "t1218"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_python_pty_spawn.yml",
     "title": "Python Spawning Pretty TTY on Windows",
     "techniques": [
@@ -14576,13 +13031,6 @@
     "title": "Loaded Module Enumeration Via Tasklist.EXE",
     "techniques": [
       "t1003"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_remote_access_tools_teamviewer_incoming_connection.yml",
-    "title": "Remote Access Tool - Team Viewer Session Started On Windows Host",
-    "techniques": [
-      "t1133"
     ]
   },
   {
@@ -14710,13 +13158,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_susp_network_command.yml",
-    "title": "Suspicious Network Command",
-    "techniques": [
-      "t1016"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_pua_chisel.yml",
     "title": "PUA - Chisel Tunneling Tool Execution",
     "techniques": [
@@ -14817,13 +13258,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_schtasks_creation.yml",
-    "title": "Scheduled Task Creation Via Schtasks.EXE",
-    "techniques": [
-      "t1053.005"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_wuauclt_dll_loading.yml",
     "title": "Proxy Execution Via Wuauclt.EXE",
     "techniques": [
@@ -14917,14 +13351,6 @@
     ]
   },
   {
-    "file": "rules/windows/process_creation/proc_creation_win_tar_extraction.yml",
-    "title": "Compressed File Extraction Via Tar.EXE",
-    "techniques": [
-      "t1560",
-      "t1560.001"
-    ]
-  },
-  {
     "file": "rules/windows/process_creation/proc_creation_win_registry_cimprovider_dll_load.yml",
     "title": "DLL Execution Via Register-cimprovider.exe",
     "techniques": [
@@ -14943,13 +13369,6 @@
     "title": "HackTool - SysmonEOP Execution",
     "techniques": [
       "t1068"
-    ]
-  },
-  {
-    "file": "rules/windows/process_creation/proc_creation_win_cmd_rmdir_execution.yml",
-    "title": "Directory Removal Via Rmdir",
-    "techniques": [
-      "t1070.004"
     ]
   },
   {
@@ -15051,13 +13470,6 @@
     "techniques": [
       "t1567",
       "t1572"
-    ]
-  },
-  {
-    "file": "rules/windows/network_connection/net_connection_win_domain_notion_api_susp_communication.yml",
-    "title": "Potentially Suspicious Network Connection To Notion API",
-    "techniques": [
-      "t1102"
     ]
   },
   {
@@ -15176,13 +13588,6 @@
     ]
   },
   {
-    "file": "rules/windows/network_connection/net_connection_win_regasm_network_activity.yml",
-    "title": "RegAsm.EXE Initiating Network Connection To Public IP",
-    "techniques": [
-      "t1218.009"
-    ]
-  },
-  {
     "file": "rules/windows/network_connection/net_connection_win_domain_google_api_non_browser_access.yml",
     "title": "Suspicious Non-Browser Network Communication With Google API",
     "techniques": [
@@ -15279,13 +13684,6 @@
     "title": "Network Connection Initiated From Process Located In Potentially Suspicious Or Uncommon Location",
     "techniques": [
       "t1105"
-    ]
-  },
-  {
-    "file": "rules/windows/network_connection/net_connection_win_domain_mega_nz.yml",
-    "title": "Network Connection Initiated To Mega.nz",
-    "techniques": [
-      "t1567.002"
     ]
   },
   {
@@ -15422,14 +13820,6 @@
     ]
   },
   {
-    "file": "rules/windows/driver_load/driver_load_win_vuln_drivers_names.yml",
-    "title": "Vulnerable Driver Load By Name",
-    "techniques": [
-      "t1068",
-      "t1543.003"
-    ]
-  },
-  {
     "file": "rules/windows/driver_load/driver_load_win_pua_system_informer.yml",
     "title": "PUA - System Informer Driver Load",
     "techniques": [
@@ -15515,13 +13905,6 @@
     ]
   },
   {
-    "file": "rules/windows/create_remote_thread/create_remote_thread_win_susp_uncommon_target_image.yml",
-    "title": "Remote Thread Creation In Uncommon Target Image",
-    "techniques": [
-      "t1055.003"
-    ]
-  },
-  {
     "file": "rules/windows/create_remote_thread/create_remote_thread_win_powershell_susp_targets.yml",
     "title": "Remote Thread Creation Via PowerShell In Uncommon Target",
     "techniques": [
@@ -15561,13 +13944,6 @@
     ]
   },
   {
-    "file": "rules/windows/dns_query/dns_query_win_dns_server_discovery_via_ldap_query.yml",
-    "title": "DNS Server Discovery Via LDAP Query",
-    "techniques": [
-      "t1482"
-    ]
-  },
-  {
     "file": "rules/windows/dns_query/dns_query_win_susp_external_ip_lookup.yml",
     "title": "Suspicious DNS Query for IP Lookup Service APIs",
     "techniques": [
@@ -15579,13 +13955,6 @@
     "title": "Suspicious DNS Query Indicating Kerberos Coercion via DNS Object SPN Spoofing",
     "techniques": [
       "t1557.001"
-    ]
-  },
-  {
-    "file": "rules/windows/dns_query/dns_query_win_onelaunch_update_service.yml",
-    "title": "DNS Query Request To OneLaunch Update Service",
-    "techniques": [
-      "t1056"
     ]
   },
   {
@@ -15640,25 +14009,10 @@
     ]
   },
   {
-    "file": "rules/windows/dns_query/dns_query_win_quickassist.yml",
-    "title": "DNS Query Request By QuickAssist.EXE",
-    "techniques": [
-      "t1071.001",
-      "t1210"
-    ]
-  },
-  {
     "file": "rules/windows/dns_query/dns_query_win_common_malware_hosting_services.yml",
     "title": "DNS Query To Common Malware Hosting and Shortener Services",
     "techniques": [
       "t1071.004"
-    ]
-  },
-  {
-    "file": "rules/windows/dns_query/dns_query_win_ufile_io_query.yml",
-    "title": "DNS Query To Ufile.io",
-    "techniques": [
-      "t1567.002"
     ]
   },
   {
@@ -15871,13 +14225,6 @@
     ]
   },
   {
-    "file": "rules/windows/registry/registry_set/registry_set_persistence_app_cpmpat_layer_registerapprestart.yml",
-    "title": "Potential Persistence Via AppCompat RegisterAppRestart Layer",
-    "techniques": [
-      "t1546.011"
-    ]
-  },
-  {
     "file": "rules/windows/registry/registry_set/registry_set_disable_windows_firewall.yml",
     "title": "Disable Windows Firewall by Registry",
     "techniques": [
@@ -15962,13 +14309,6 @@
     ]
   },
   {
-    "file": "rules/windows/registry/registry_set/registry_set_optimize_file_sharing_network.yml",
-    "title": "MaxMpxCt Registry Value Changed",
-    "techniques": [
-      "t1070.005"
-    ]
-  },
-  {
     "file": "rules/windows/registry/registry_set/registry_set_disable_security_center_notifications.yml",
     "title": "Disable Windows Security Center Notifications",
     "techniques": [
@@ -16026,14 +14366,6 @@
     ]
   },
   {
-    "file": "rules/windows/registry/registry_set/registry_set_rpcrt4_etw_tamper.yml",
-    "title": "ETW Logging Disabled For rpcrt4.dll",
-    "techniques": [
-      "t1112",
-      "t1685"
-    ]
-  },
-  {
     "file": "rules/windows/registry/registry_set/registry_set_office_disable_python_security_warnings.yml",
     "title": "Python Function Execution Security Warning Disabled In Excel - Registry",
     "techniques": [
@@ -16045,13 +14377,6 @@
     "title": "Potential WerFault ReflectDebugger Registry Value Abuse",
     "techniques": [
       "t1036.003"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_persistence_globalflags.yml",
-    "title": "Potential Persistence Via GlobalFlags",
-    "techniques": [
-      "t1546.012"
     ]
   },
   {
@@ -16109,20 +14434,6 @@
     "title": "Suspicious Service Installed",
     "techniques": [
       "t1685"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_persistence_app_paths.yml",
-    "title": "Potential Persistence Via App Paths Default Property",
-    "techniques": [
-      "t1546.012"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_sip_persistence.yml",
-    "title": "Persistence Via New SIP Provider",
-    "techniques": [
-      "t1553.003"
     ]
   },
   {
@@ -16230,13 +14541,6 @@
     "title": "Potential Persistence Via Netsh Helper DLL - Registry",
     "techniques": [
       "t1546.007"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_enabling_cor_profiler_env_variables.yml",
-    "title": "Enabling COR Profiler Environment Variables",
-    "techniques": [
-      "t1574.012"
     ]
   },
   {
@@ -16434,7 +14738,6 @@
     "file": "rules/windows/registry/registry_set/registry_set_susp_shell_open_keys_modification_patterns.yml",
     "title": "Suspicious Shell Open Command Registry Modification",
     "techniques": [
-      "t1546.001",
       "t1548.002"
     ]
   },
@@ -16486,13 +14789,6 @@
     "title": "Suspicious Execution Of Renamed Sysinternals Tools - Registry",
     "techniques": [
       "t1588.002"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_persistence_office_vsto.yml",
-    "title": "Potential Persistence Via Visual Studio Tools for Office",
-    "techniques": [
-      "t1137.006"
     ]
   },
   {
@@ -16561,20 +14857,6 @@
     ]
   },
   {
-    "file": "rules/windows/registry/registry_set/registry_set_persistence_xll.yml",
-    "title": "Potential Persistence Via Excel Add-in - Registry",
-    "techniques": [
-      "t1137.006"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_persistence_ie.yml",
-    "title": "Modification of IE Registry Settings",
-    "techniques": [
-      "t1112"
-    ]
-  },
-  {
     "file": "rules/windows/registry/registry_set/registry_set_uac_disable_secure_desktop_prompt.yml",
     "title": "UAC Secure Desktop Prompt Disabled",
     "techniques": [
@@ -16604,13 +14886,6 @@
     ]
   },
   {
-    "file": "rules/windows/registry/registry_set/registry_set_special_accounts.yml",
-    "title": "Hiding User Account Via SpecialAccounts Registry Key",
-    "techniques": [
-      "t1564.002"
-    ]
-  },
-  {
     "file": "rules/windows/registry/registry_set/registry_set_chrome_extension.yml",
     "title": "Running Chrome VPN Extensions via the Registry 2 VPN Extension",
     "techniques": [
@@ -16636,20 +14911,6 @@
     "title": "RDP Sensitive Settings Changed to Zero",
     "techniques": [
       "t1112"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_persistence_shim_database.yml",
-    "title": "Potential Persistence Via Shim Database Modification",
-    "techniques": [
-      "t1546.011"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_bypass_uac_using_eventviewer.yml",
-    "title": "Bypass UAC Using Event Viewer",
-    "techniques": [
-      "t1547.010"
     ]
   },
   {
@@ -16689,33 +14950,12 @@
     ]
   },
   {
-    "file": "rules/windows/registry/registry_set/registry_set_timeproviders_dllname.yml",
-    "title": "New TimeProviders Registered With Uncommon DLL Name",
-    "techniques": [
-      "t1547.003"
-    ]
-  },
-  {
     "file": "rules/windows/registry/registry_set/registry_set_cobaltstrike_service_installs.yml",
     "title": "Potential CobaltStrike Service Installations - Registry",
     "techniques": [
       "t1021.002",
       "t1543.003",
       "t1569.002"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_pua_sysinternals_execution_via_eula.yml",
-    "title": "PUA - Sysinternal Tool Execution - Registry",
-    "techniques": [
-      "t1588.002"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_new_application_appcompat.yml",
-    "title": "New Application in AppCompat",
-    "techniques": [
-      "t1204.002"
     ]
   },
   {
@@ -16729,7 +14969,6 @@
     "file": "rules/windows/registry/registry_set/registry_set_asep_reg_keys_modification_session_manager.yml",
     "title": "Session Manager Autorun Keys Modification",
     "techniques": [
-      "t1546.009",
       "t1547.001"
     ]
   },
@@ -16835,13 +15074,6 @@
     ]
   },
   {
-    "file": "rules/windows/registry/registry_set/registry_set_add_port_monitor.yml",
-    "title": "Add Port Monitor Persistence in Registry",
-    "techniques": [
-      "t1547.010"
-    ]
-  },
-  {
     "file": "rules/windows/registry/registry_set/registry_set_disallowrun_execution.yml",
     "title": "Add DisallowRun Execution to Registry",
     "techniques": [
@@ -16870,13 +15102,6 @@
     ]
   },
   {
-    "file": "rules/windows/registry/registry_set/registry_set_persistence_shim_database_susp_application.yml",
-    "title": "Suspicious Shim Database Patching Activity",
-    "techniques": [
-      "t1546.011"
-    ]
-  },
-  {
     "file": "rules/windows/registry/registry_set/registry_set_winlogon_notify_key.yml",
     "title": "Winlogon Notify Key Logon Persistence",
     "techniques": [
@@ -16888,21 +15113,6 @@
     "title": "Wow6432Node CurrentVersion Autorun Keys Modification",
     "techniques": [
       "t1547.001"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_services_etw_tamper.yml",
-    "title": "ETW Logging Disabled For SCM",
-    "techniques": [
-      "t1112",
-      "t1685"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_set/registry_set_change_rdp_port.yml",
-    "title": "Default RDP Port Changed to Non Standard Port",
-    "techniques": [
-      "t1547.010"
     ]
   },
   {
@@ -17007,13 +15217,6 @@
     ]
   },
   {
-    "file": "rules/windows/registry/registry_set/registry_set_persistence_shim_database_uncommon_location.yml",
-    "title": "Potential Persistence Via Shim Database In Uncommon Location",
-    "techniques": [
-      "t1546.011"
-    ]
-  },
-  {
     "file": "rules/windows/registry/registry_set/registry_set_dhcp_calloutdll.yml",
     "title": "DHCP Callout DLL Installation",
     "techniques": [
@@ -17049,13 +15252,6 @@
     "techniques": [
       "t1123",
       "t1125"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_event/registry_event_office_test_regadd.yml",
-    "title": "Office Application Startup - Office Test",
-    "techniques": [
-      "t1137.002"
     ]
   },
   {
@@ -17112,13 +15308,6 @@
     "title": "Potential Qakbot Registry Activity",
     "techniques": [
       "t1112"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_event/registry_event_susp_lsass_dll_load.yml",
-    "title": "DLL Load via LSASS",
-    "techniques": [
-      "t1547.008"
     ]
   },
   {
@@ -17181,24 +15370,10 @@
     ]
   },
   {
-    "file": "rules/windows/registry/registry_event/registry_event_modify_screensaver_binary_path.yml",
-    "title": "Path To Screensaver Binary Modified",
-    "techniques": [
-      "t1546.002"
-    ]
-  },
-  {
     "file": "rules/windows/registry/registry_event/registry_event_runkey_winekey.yml",
     "title": "WINEKEY Registry Modification",
     "techniques": [
       "t1547"
-    ]
-  },
-  {
-    "file": "rules/windows/registry/registry_event/registry_event_new_dll_added_to_appcertdlls_registry_key.yml",
-    "title": "New DLL Added to AppCertDlls Registry Key",
-    "techniques": [
-      "t1546.009"
     ]
   },
   {
@@ -17240,7 +15415,6 @@
     "file": "rules/windows/registry/registry_event/registry_event_shell_open_keys_manipulation.yml",
     "title": "Shell Open Registry Keys Manipulation",
     "techniques": [
-      "t1546.001",
       "t1548.002"
     ]
   },
@@ -17259,20 +15433,6 @@
     ]
   },
   {
-    "file": "rules/identity/okta/okta_suspicious_activity_enduser_report.yml",
-    "title": "Okta Suspicious Activity Reported by End-user",
-    "techniques": [
-      "t1586.003"
-    ]
-  },
-  {
-    "file": "rules/identity/okta/okta_admin_role_assigned_to_user_or_group.yml",
-    "title": "Okta Admin Role Assigned to an User or Group",
-    "techniques": [
-      "t1098.003"
-    ]
-  },
-  {
     "file": "rules/identity/okta/okta_new_behaviours_admin_console.yml",
     "title": "Okta New Admin Console Behaviours",
     "techniques": [
@@ -17287,24 +15447,10 @@
     ]
   },
   {
-    "file": "rules/identity/okta/okta_mfa_reset_or_deactivated.yml",
-    "title": "Okta MFA Reset or Deactivated",
-    "techniques": [
-      "t1556.006"
-    ]
-  },
-  {
     "file": "rules/identity/okta/okta_user_session_start_via_anonymised_proxy.yml",
     "title": "Okta User Session Start Via An Anonymising Proxy Service",
     "techniques": [
       "t1685"
-    ]
-  },
-  {
-    "file": "rules/identity/okta/okta_identity_provider_created.yml",
-    "title": "Okta Identity Provider Created",
-    "techniques": [
-      "t1098.001"
     ]
   },
   {
@@ -17319,13 +15465,6 @@
     "title": "Okta FastPass Phishing Detection",
     "techniques": [
       "t1566"
-    ]
-  },
-  {
-    "file": "rules/linux/file_event/file_event_lnx_susp_cron_file_created.yml",
-    "title": "New Cron File Created",
-    "techniques": [
-      "t1053.003"
     ]
   },
   {
@@ -17386,24 +15525,10 @@
     ]
   },
   {
-    "file": "rules/linux/builtin/lnx_file_copy.yml",
-    "title": "Remote File Copy",
-    "techniques": [
-      "t1105"
-    ]
-  },
-  {
     "file": "rules/linux/builtin/lnx_apt_equationgroup_lnx.yml",
     "title": "Equation Group Indicators",
     "techniques": [
       "t1059.004"
-    ]
-  },
-  {
-    "file": "rules/linux/builtin/lnx_ldso_preload_injection.yml",
-    "title": "Code Injection by ld.so Preload",
-    "techniques": [
-      "t1574.006"
     ]
   },
   {
@@ -17492,34 +15617,19 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_susp_inod_listing.yml",
-    "title": "Potential Container Discovery Via Inodes Listing",
-    "techniques": [
-      "t1082"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_esxcli_vsan_discovery.yml",
     "title": "ESXi VSAN Information Discovery Via ESXCLI",
     "techniques": [
       "t1007",
-      "t1033",
-      "t1059.012"
+      "t1033"
     ]
   },
   {
     "file": "rules/linux/process_creation/proc_creation_lnx_services_stop_and_disable.yml",
     "title": "Disable Or Stop Services",
     "techniques": [
+      "t1489",
       "t1685"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_cap_setuid.yml",
-    "title": "Linux Setuid Capability Set on a Binary via Setcap Utility",
-    "techniques": [
-      "t1548",
-      "t1554"
     ]
   },
   {
@@ -17573,13 +15683,6 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_system_network_discovery.yml",
-    "title": "System Network Discovery - Linux",
-    "techniques": [
-      "t1016"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_python_base64_encoded_execution.yml",
     "title": "Python One-Liners with Base64 Decoding - Linux",
     "techniques": [
@@ -17609,32 +15712,10 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_local_account.yml",
-    "title": "Local System Accounts Discovery - Linux",
-    "techniques": [
-      "t1087.001"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_susp_recon_indicators.yml",
     "title": "Linux Recon Indicators",
     "techniques": [
-      "t1552.001",
-      "t1592.004"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_setgid_setuid.yml",
-    "title": "Setuid and Setgid",
-    "techniques": [
-      "t1548.001"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_susp_dockerenv_recon.yml",
-    "title": "Docker Container Discovery Via Dockerenv Listing",
-    "techniques": [
-      "t1082"
+      "t1552.001"
     ]
   },
   {
@@ -17642,8 +15723,7 @@
     "title": "ESXi Storage Information Discovery Via ESXCLI",
     "techniques": [
       "t1007",
-      "t1033",
-      "t1059.012"
+      "t1033"
     ]
   },
   {
@@ -17654,31 +15734,10 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_dd_file_overwrite.yml",
-    "title": "DD File Overwrite",
-    "techniques": [
-      "t1485"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_remote_system_discovery.yml",
-    "title": "Linux Remote System Discovery",
-    "techniques": [
-      "t1018"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_bpftrace_unsafe_option_usage.yml",
     "title": "BPFtrace Unsafe Option Usage",
     "techniques": [
       "t1059.004"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_proxy_connection.yml",
-    "title": "Connection Proxy",
-    "techniques": [
-      "t1090"
     ]
   },
   {
@@ -17696,24 +15755,10 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_local_groups.yml",
-    "title": "Local Groups Discovery - Linux",
-    "techniques": [
-      "t1069.001"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_python_shell_os_system.yml",
     "title": "Inline Python Execution - Spawn Shell Via OS System Library",
     "techniques": [
       "t1059"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_doas_execution.yml",
-    "title": "Linux Doas Tool Execution",
-    "techniques": [
-      "t1548"
     ]
   },
   {
@@ -17732,25 +15777,11 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_security_software_discovery.yml",
-    "title": "Security Software Discovery - Linux",
-    "techniques": [
-      "t1518.001"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_susp_curl_fileupload.yml",
     "title": "Suspicious Curl File Upload - Linux",
     "techniques": [
       "t1105",
       "t1567"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_file_deletion.yml",
-    "title": "File Deletion",
-    "techniques": [
-      "t1070.004"
     ]
   },
   {
@@ -17761,25 +15792,10 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_susp_git_clone.yml",
-    "title": "Suspicious Git Clone - Linux",
-    "techniques": [
-      "t1593.003"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_esxcli_vm_kill.yml",
     "title": "ESXi VM Kill Via ESXCLI",
     "techniques": [
-      "t1059.012",
       "t1529"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_system_info_discovery.yml",
-    "title": "System Information Discovery",
-    "techniques": [
-      "t1082"
     ]
   },
   {
@@ -17828,13 +15844,6 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_install_root_certificate.yml",
-    "title": "Install Root Certificate",
-    "techniques": [
-      "t1553.004"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_gcc_shell_execution.yml",
     "title": "Shell Execution GCC  - Linux",
     "techniques": [
@@ -17863,24 +15872,10 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_susp_container_residence_discovery.yml",
-    "title": "Container Residence Discovery Via Proc Virtual FS",
-    "techniques": [
-      "t1082"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_susp_curl_useragent.yml",
     "title": "Suspicious Curl Change User Agents - Linux",
     "techniques": [
       "t1071.001"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_susp_network_utilities_execution.yml",
-    "title": "Linux Network Service Scanning Tools Execution",
-    "techniques": [
-      "t1046"
     ]
   },
   {
@@ -17927,17 +15922,9 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_system_network_connections_discovery.yml",
-    "title": "System Network Connections Discovery - Linux",
-    "techniques": [
-      "t1049"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_esxcli_user_account_creation.yml",
     "title": "ESXi Account Creation Via ESXCLI",
     "techniques": [
-      "t1059.012",
       "t1136"
     ]
   },
@@ -17946,8 +15933,7 @@
     "title": "ESXi VM List Discovery Via ESXCLI",
     "techniques": [
       "t1007",
-      "t1033",
-      "t1059.012"
+      "t1033"
     ]
   },
   {
@@ -17958,38 +15944,10 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_chroot_execution.yml",
-    "title": "Linux Sudo Chroot Execution",
-    "techniques": [
-      "t1068"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_netcat_reverse_shell.yml",
     "title": "Potential Netcat Reverse Shell Execution",
     "techniques": [
       "t1059"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_curl_usage.yml",
-    "title": "Curl Usage on Linux",
-    "techniques": [
-      "t1105"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_base64_decode.yml",
-    "title": "Decode Base64 Encoded Text",
-    "techniques": [
-      "t1027"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_capa_discovery.yml",
-    "title": "Capabilities Discovery - Linux",
-    "techniques": [
-      "t1083"
     ]
   },
   {
@@ -18000,38 +15958,10 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_grep_os_arch_discovery.yml",
-    "title": "OS Architecture Discovery Via Grep",
-    "techniques": [
-      "t1082"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_file_and_directory_discovery.yml",
-    "title": "File and Directory Discovery - Linux",
-    "techniques": [
-      "t1083"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_remote_access_tools_teamviewer_incoming_connection.yml",
-    "title": "Remote Access Tool - Team Viewer Session Started On Linux Host",
-    "techniques": [
-      "t1133"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_susp_pipe_shell.yml",
     "title": "Linux Shell Pipe to Shell",
     "techniques": [
       "t1140"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_susp_history_recon.yml",
-    "title": "Print History File Contents",
-    "techniques": [
-      "t1592.004"
     ]
   },
   {
@@ -18042,25 +15972,10 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_auditctl_clear_rules.yml",
-    "title": "Audit Rules Deleted Via Auditctl",
-    "techniques": [
-      "t1685.004"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_susp_sensitive_file_access.yml",
     "title": "Potential Suspicious Change To Sensitive/Critical Files",
     "techniques": [
       "t1565.001"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_cap_setgid.yml",
-    "title": "Linux Setgid Capability Set on a Binary via Setcap Utility",
-    "techniques": [
-      "t1548",
-      "t1554"
     ]
   },
   {
@@ -18071,18 +15986,11 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_at_command.yml",
-    "title": "Scheduled Task/Job At",
-    "techniques": [
-      "t1053.002"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_esxcli_syslog_config_change.yml",
     "title": "ESXi Syslog Configuration Change Via ESXCLI",
     "techniques": [
-      "t1059.012",
-      "t1685"
+      "t1685",
+      "t1690"
     ]
   },
   {
@@ -18150,8 +16058,7 @@
     "title": "ESXi Network Configuration Discovery Via ESXCLI",
     "techniques": [
       "t1007",
-      "t1033",
-      "t1059.012"
+      "t1033"
     ]
   },
   {
@@ -18162,24 +16069,10 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_susp_process_reading_sudoers.yml",
-    "title": "Access of Sudoers File Content",
-    "techniques": [
-      "t1592.004"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_cp_passwd_or_shadow_tmp.yml",
     "title": "Copy Passwd Or Shadow From TMP Path",
     "techniques": [
       "t1552.001"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_clipboard_collection.yml",
-    "title": "Clipboard Collection with Xclip Tool",
-    "techniques": [
-      "t1115"
     ]
   },
   {
@@ -18198,17 +16091,9 @@
     ]
   },
   {
-    "file": "rules/linux/process_creation/proc_creation_lnx_remove_package.yml",
-    "title": "Linux Package Uninstall",
-    "techniques": [
-      "t1070"
-    ]
-  },
-  {
     "file": "rules/linux/process_creation/proc_creation_lnx_esxcli_permission_change_admin.yml",
     "title": "ESXi Admin Permission Assigned To Account Via ESXCLI",
     "techniques": [
-      "t1059.012",
       "t1098"
     ]
   },
@@ -18224,8 +16109,7 @@
     "title": "ESXi System Information Discovery Via ESXCLI",
     "techniques": [
       "t1007",
-      "t1033",
-      "t1059.012"
+      "t1033"
     ]
   },
   {
@@ -18233,20 +16117,6 @@
     "title": "User Has Been Deleted Via Userdel",
     "techniques": [
       "t1531"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_crontab_enumeration.yml",
-    "title": "Crontab Enumeration",
-    "techniques": [
-      "t1007"
-    ]
-  },
-  {
-    "file": "rules/linux/process_creation/proc_creation_lnx_dd_process_injection.yml",
-    "title": "Potential Linux Process Code Injection Via DD Utility",
-    "techniques": [
-      "t1055.009"
     ]
   },
   {
@@ -18292,31 +16162,9 @@
     ]
   },
   {
-    "file": "rules/linux/auditd/lnx_auditd_system_info_discovery.yml",
-    "title": "System Information Discovery - Auditd",
-    "techniques": [
-      "t1082"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/lnx_auditd_audio_capture.yml",
-    "title": "Audio Capture",
-    "techniques": [
-      "t1123"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/lnx_auditd_password_policy_discovery.yml",
-    "title": "Password Policy Discovery - Linux",
-    "techniques": [
-      "t1201"
-    ]
-  },
-  {
     "file": "rules/linux/auditd/lnx_auditd_disable_aslr_protection.yml",
     "title": "ASLR Disabled Via Sysctl or Direct Syscall - Linux",
     "techniques": [
-      "t1055.009",
       "t1685"
     ]
   },
@@ -18335,13 +16183,6 @@
     ]
   },
   {
-    "file": "rules/linux/auditd/path/lnx_auditd_hidden_binary_execution.yml",
-    "title": "Use Of Hidden Paths Or Files",
-    "techniques": [
-      "t1574.001"
-    ]
-  },
-  {
     "file": "rules/linux/auditd/path/lnx_auditd_logging_config_change.yml",
     "title": "Logging Configuration Changes on Linux Host",
     "techniques": [
@@ -18357,31 +16198,11 @@
     ]
   },
   {
-    "file": "rules/linux/auditd/path/lnx_auditd_ld_so_preload_mod.yml",
-    "title": "Modification of ld.so.preload",
-    "techniques": [
-      "t1574.006"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/path/lnx_auditd_unix_shell_configuration_modification.yml",
-    "title": "Unix Shell Configuration Modification",
-    "techniques": [
-      "t1546.004"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/path/lnx_auditd_system_info_discovery2.yml",
-    "title": "System and Hardware Information Discovery",
-    "techniques": [
-      "t1082"
-    ]
-  },
-  {
     "file": "rules/linux/auditd/path/lnx_auditd_magic_system_request_key.yml",
     "title": "Potential Abuse of Linux Magic System Request Key",
     "techniques": [
       "t1059.004",
+      "t1489",
       "t1499",
       "t1529"
     ]
@@ -18391,27 +16212,6 @@
     "title": "Clear or Disable Kernel Ring Buffer Logs via Syslog Syscall",
     "techniques": [
       "t1685.006"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/syscall/lnx_auditd_load_module_insmod.yml",
-    "title": "Loading of Kernel Module via Insmod",
-    "techniques": [
-      "t1547.006"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/syscall/lnx_auditd_split_file_into_pieces.yml",
-    "title": "Split A File Into Pieces - Linux",
-    "techniques": [
-      "t1030"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/syscall/lnx_auditd_network_service_scanning.yml",
-    "title": "Linux Network Service Scanning - Auditd",
-    "techniques": [
-      "t1046"
     ]
   },
   {
@@ -18426,21 +16226,6 @@
     "title": "Creation Of An User Account",
     "techniques": [
       "t1136.001"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/syscall/lnx_auditd_susp_special_file_creation_via_mknod_syscall.yml",
-    "title": "Special File Creation via Mknod Syscall",
-    "techniques": [
-      "t1543.003"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/syscall/lnx_auditd_susp_discovery_sysinfo_syscall.yml",
-    "title": "System Info Discovery via Sysinfo Syscall",
-    "techniques": [
-      "t1057",
-      "t1082"
     ]
   },
   {
@@ -18466,67 +16251,10 @@
     ]
   },
   {
-    "file": "rules/linux/auditd/execve/lnx_auditd_capabilities_discovery.yml",
-    "title": "Linux Capabilities Discovery",
-    "techniques": [
-      "t1083",
-      "t1548"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_clipboard_collection.yml",
-    "title": "Clipboard Collection with Xclip Tool - Auditd",
-    "techniques": [
-      "t1115"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_steghide_embed_steganography.yml",
-    "title": "Steganography Hide Files with Steghide",
-    "techniques": [
-      "t1027.003"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_clipboard_image_collection.yml",
-    "title": "Clipboard Collection of Image Data with Xclip Tool",
-    "techniques": [
-      "t1115"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_dd_delete_file.yml",
-    "title": "Overwriting the File with Dev Zero or Null",
-    "techniques": [
-      "t1485"
-    ]
-  },
-  {
     "file": "rules/linux/auditd/execve/lnx_auditd_change_file_time_attr.yml",
     "title": "File Time Attribute Change - Linux",
     "techniques": [
       "t1070.006"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_system_shutdown_reboot.yml",
-    "title": "System Shutdown/Reboot - Linux",
-    "techniques": [
-      "t1529"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_screencaputre_xwd.yml",
-    "title": "Screen Capture with Xwd",
-    "techniques": [
-      "t1113"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_unzip_hidden_zip_files_steganography.yml",
-    "title": "Steganography Unzip Hidden Information From Picture File",
-    "techniques": [
-      "t1027.003"
     ]
   },
   {
@@ -18537,59 +16265,10 @@
     ]
   },
   {
-    "file": "rules/linux/auditd/execve/lnx_auditd_susp_histfile_operations.yml",
-    "title": "Suspicious History File Operations - Linux",
-    "techniques": [
-      "t1552.003"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_user_discovery.yml",
-    "title": "System Owner or User Discovery - Linux",
-    "techniques": [
-      "t1033"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_hidden_zip_files_steganography.yml",
-    "title": "Steganography Hide Zip Information in Picture File",
-    "techniques": [
-      "t1027.003"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_network_sniffing.yml",
-    "title": "Network Sniffing - Linux",
-    "techniques": [
-      "t1040"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_screencapture_import.yml",
-    "title": "Screen Capture with Import Tool",
-    "techniques": [
-      "t1113"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_hidden_files_directories.yml",
-    "title": "Hidden Files and Directories",
-    "techniques": [
-      "t1564.001"
-    ]
-  },
-  {
     "file": "rules/linux/auditd/execve/lnx_auditd_find_cred_in_files.yml",
     "title": "Credentials In Files - Linux",
     "techniques": [
       "t1552.001"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_data_compressed.yml",
-    "title": "Data Compressed",
-    "techniques": [
-      "t1560.001"
     ]
   },
   {
@@ -18621,24 +16300,10 @@
     ]
   },
   {
-    "file": "rules/linux/auditd/execve/lnx_auditd_steghide_extract_steganography.yml",
-    "title": "Steganography Extract Files with Steghide",
-    "techniques": [
-      "t1027.003"
-    ]
-  },
-  {
     "file": "rules/linux/auditd/execve/lnx_auditd_coinminer.yml",
     "title": "Possible Coin Miner CPU Priority Param",
     "techniques": [
       "t1068"
-    ]
-  },
-  {
-    "file": "rules/linux/auditd/execve/lnx_auditd_susp_service_reload_or_restart.yml",
-    "title": "Service Reload or Start - Linux",
-    "techniques": [
-      "t1543.002"
     ]
   },
   {
@@ -18655,15 +16320,6 @@
     "techniques": [
       "t1071.001",
       "t1197"
-    ]
-  },
-  {
-    "file": "rules/web/proxy_generic/proxy_download_susp_tlds_whitelist.yml",
-    "title": "Download From Suspicious TLD - Whitelist",
-    "techniques": [
-      "t1203",
-      "t1204.002",
-      "t1566"
     ]
   },
   {
@@ -18717,15 +16373,6 @@
     ]
   },
   {
-    "file": "rules/web/proxy_generic/proxy_download_susp_tlds_blacklist.yml",
-    "title": "Download From Suspicious TLD - Blacklist",
-    "techniques": [
-      "t1203",
-      "t1204.002",
-      "t1566"
-    ]
-  },
-  {
     "file": "rules/web/proxy_generic/proxy_susp_flash_download_loc.yml",
     "title": "Flash Player Update from Suspicious Location",
     "techniques": [
@@ -18746,8 +16393,7 @@
     "title": "Raw Paste Service Access",
     "techniques": [
       "t1071.001",
-      "t1102.001",
-      "t1102.003"
+      "t1102.001"
     ]
   },
   {
@@ -18814,8 +16460,7 @@
     "title": "PwnDrp Access",
     "techniques": [
       "t1071.001",
-      "t1102.001",
-      "t1102.003"
+      "t1102.001"
     ]
   },
   {
@@ -18830,13 +16475,6 @@
     "title": "Rclone Activity via Proxy",
     "techniques": [
       "t1567.002"
-    ]
-  },
-  {
-    "file": "rules/web/proxy_generic/proxy_susp_ipfs_cred_harvest.yml",
-    "title": "Suspicious Network Communication With IPFS",
-    "techniques": [
-      "t1056"
     ]
   },
   {
@@ -18861,25 +16499,11 @@
     ]
   },
   {
-    "file": "rules/web/product/nginx/web_nginx_core_dump.yml",
-    "title": "Nginx Core Dump",
-    "techniques": [
-      "t1499.004"
-    ]
-  },
-  {
     "file": "rules/web/product/apache/web_apache_threading_error.yml",
     "title": "Apache Threading Error",
     "techniques": [
       "t1190",
       "t1210"
-    ]
-  },
-  {
-    "file": "rules/web/product/apache/web_apache_segfault.yml",
-    "title": "Apache Segmentation Fault",
-    "techniques": [
-      "t1499.004"
     ]
   },
   {
@@ -18974,13 +16598,6 @@
     ]
   },
   {
-    "file": "rules/macos/file_event/file_event_macos_emond_launch_daemon.yml",
-    "title": "MacOS Emond Launch Daemon",
-    "techniques": [
-      "t1546.014"
-    ]
-  },
-  {
     "file": "rules/macos/process_creation/proc_creation_macos_remote_access_tools_renamed_meshagent_execution.yml",
     "title": "Remote Access Tool - Renamed MeshAgent Execution - MacOS",
     "techniques": [
@@ -18999,7 +16616,6 @@
     "file": "rules/macos/process_creation/proc_creation_macos_clipboard_access_via_osascript.yml",
     "title": "Clipboard Access Via OSAScript",
     "techniques": [
-      "t1059.002",
       "t1115"
     ]
   },
@@ -19007,29 +16623,7 @@
     "file": "rules/macos/process_creation/proc_creation_macos_persistence_via_plistbuddy.yml",
     "title": "Potential Persistence Via PlistBuddy",
     "techniques": [
-      "t1543.001",
-      "t1543.004"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_suspicious_applet_behaviour.yml",
-    "title": "Osacompile Execution By Potentially Suspicious Applet/Osascript",
-    "techniques": [
-      "t1059.002"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_remote_system_discovery.yml",
-    "title": "Macos Remote System Discovery",
-    "techniques": [
-      "t1018"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_space_after_filename.yml",
-    "title": "Space After Filename - macOS",
-    "techniques": [
-      "t1036.006"
+      "t1543.001"
     ]
   },
   {
@@ -19058,13 +16652,6 @@
     ]
   },
   {
-    "file": "rules/macos/process_creation/proc_creation_macos_csrutil_status.yml",
-    "title": "System Integrity Protection (SIP) Enumeration",
-    "techniques": [
-      "t1518.001"
-    ]
-  },
-  {
     "file": "rules/macos/process_creation/proc_creation_macos_payload_decoded_and_decrypted.yml",
     "title": "Payload Decoded and Decrypted via Built-in Utilities",
     "techniques": [
@@ -19074,52 +16661,10 @@
     ]
   },
   {
-    "file": "rules/macos/process_creation/proc_creation_macos_create_hidden_account.yml",
-    "title": "Hidden User Creation",
-    "techniques": [
-      "t1564.002"
-    ]
-  },
-  {
     "file": "rules/macos/process_creation/proc_creation_macos_tail_base64_decode_from_image.yml",
     "title": "Potential Base64 Decoded From Images",
     "techniques": [
       "t1140"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_system_shutdown_reboot.yml",
-    "title": "System Shutdown/Reboot - MacOs",
-    "techniques": [
-      "t1529"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_local_groups.yml",
-    "title": "Local Groups Discovery - MacOs",
-    "techniques": [
-      "t1069.001"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_susp_histfile_operations.yml",
-    "title": "Suspicious History File Operations",
-    "techniques": [
-      "t1552.003"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_remote_access_tools_teamviewer_incoming_connection.yml",
-    "title": "Remote Access Tool - Team Viewer Session Started On MacOS Host",
-    "techniques": [
-      "t1133"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_file_and_directory_discovery.yml",
-    "title": "File and Directory Discovery - MacOS",
-    "techniques": [
-      "t1083"
     ]
   },
   {
@@ -19140,23 +16685,7 @@
     "file": "rules/macos/process_creation/proc_creation_macos_office_susp_child_processes.yml",
     "title": "Suspicious Microsoft Office Child Process - MacOS",
     "techniques": [
-      "t1059.002",
-      "t1137.002",
       "t1204.002"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_local_account.yml",
-    "title": "Local System Accounts Discovery - MacOs",
-    "techniques": [
-      "t1087.001"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_split_file_into_pieces.yml",
-    "title": "Split A File Into Pieces",
-    "techniques": [
-      "t1030"
     ]
   },
   {
@@ -19167,21 +16696,6 @@
       "t1059.007",
       "t1071",
       "t1071.001"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_create_account.yml",
-    "title": "Creation Of A Local User Account",
-    "techniques": [
-      "t1136.001"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_sysadminctl_enable_guest_account.yml",
-    "title": "Guest Account Enabled Via Sysadminctl",
-    "techniques": [
-      "t1078",
-      "t1078.001"
     ]
   },
   {
@@ -19202,15 +16716,7 @@
     "file": "rules/macos/process_creation/proc_creation_macos_jxa_in_memory_execution.yml",
     "title": "JXA In-memory Execution Via OSAScript",
     "techniques": [
-      "t1059.002",
       "t1059.007"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_applescript.yml",
-    "title": "MacOS Scripting Interpreter AppleScript",
-    "techniques": [
-      "t1059.002"
     ]
   },
   {
@@ -19242,24 +16748,10 @@
     ]
   },
   {
-    "file": "rules/macos/process_creation/proc_creation_macos_base64_decode.yml",
-    "title": "Decode Base64 Encoded Text -MacOs",
-    "techniques": [
-      "t1027"
-    ]
-  },
-  {
     "file": "rules/macos/process_creation/proc_creation_macos_susp_find_execution.yml",
     "title": "Potential Discovery Activity Using Find - MacOS",
     "techniques": [
       "t1083"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_xattr_gatekeeper_bypass.yml",
-    "title": "Gatekeeper Bypass via Xattr",
-    "techniques": [
-      "t1553.001"
     ]
   },
   {
@@ -19290,19 +16782,11 @@
     "title": "Suspicious Execution via macOS Script Editor",
     "techniques": [
       "t1059",
-      "t1059.002",
       "t1204",
       "t1204.001",
       "t1553",
       "t1566",
       "t1566.002"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_network_sniffing.yml",
-    "title": "Network Sniffing - MacOs",
-    "techniques": [
-      "t1040"
     ]
   },
   {
@@ -19327,13 +16811,6 @@
     ]
   },
   {
-    "file": "rules/macos/process_creation/proc_creation_macos_screencapture.yml",
-    "title": "Screen Capture - macOS",
-    "techniques": [
-      "t1113"
-    ]
-  },
-  {
     "file": "rules/macos/process_creation/proc_creation_macos_dseditgroup_add_to_admin_group.yml",
     "title": "User Added To Admin Group Via DseditGroup",
     "techniques": [
@@ -19344,9 +16821,7 @@
     "file": "rules/macos/process_creation/proc_creation_macos_launchctl_execution.yml",
     "title": "Launch Agent/Daemon Execution Via Launchctl",
     "techniques": [
-      "t1543.001",
-      "t1543.004",
-      "t1569.001"
+      "t1543.001"
     ]
   },
   {
@@ -19354,13 +16829,6 @@
     "title": "Time Machine Backup Disabled Via Tmutil - MacOS",
     "techniques": [
       "t1490"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_gui_input_capture.yml",
-    "title": "GUI Input Capture - macOS",
-    "techniques": [
-      "t1056.002"
     ]
   },
   {
@@ -19396,31 +16864,10 @@
     ]
   },
   {
-    "file": "rules/macos/process_creation/proc_creation_macos_network_service_scanning.yml",
-    "title": "MacOS Network Service Scanning",
-    "techniques": [
-      "t1046"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_system_network_connections_discovery.yml",
-    "title": "System Network Connections Discovery - MacOs",
-    "techniques": [
-      "t1049"
-    ]
-  },
-  {
     "file": "rules/macos/process_creation/proc_creation_macos_nscurl_usage.yml",
     "title": "File Download Via Nscurl - MacOS",
     "techniques": [
       "t1105"
-    ]
-  },
-  {
-    "file": "rules/macos/process_creation/proc_creation_macos_osacompile_runonly_execution.yml",
-    "title": "OSACompile Run-Only Execution",
-    "techniques": [
-      "t1059.002"
     ]
   },
   {
@@ -19432,35 +16879,9 @@
     ]
   },
   {
-    "file": "rules/macos/process_creation/proc_creation_macos_susp_system_network_discovery.yml",
-    "title": "System Network Discovery - macOS",
-    "techniques": [
-      "t1016"
-    ]
-  },
-  {
-    "file": "rules/network/cisco/ldp/cisco_ldp_md5_auth_failed.yml",
-    "title": "Cisco LDP Authentication Failures",
-    "techniques": [
-      "t1078",
-      "t1110",
-      "t1557"
-    ]
-  },
-  {
-    "file": "rules/network/cisco/bgp/cisco_bgp_md5_auth_failed.yml",
-    "title": "Cisco BGP Authentication Failures",
-    "techniques": [
-      "t1078",
-      "t1110",
-      "t1557"
-    ]
-  },
-  {
     "file": "rules/network/cisco/aaa/cisco_cli_dot1x_disabled.yml",
     "title": "Cisco Dot1x Disabled",
     "techniques": [
-      "t1556.004",
       "t1685"
     ]
   },
@@ -19470,37 +16891,6 @@
     "techniques": [
       "t1098",
       "t1136.001"
-    ]
-  },
-  {
-    "file": "rules/network/cisco/aaa/cisco_cli_collect_data.yml",
-    "title": "Cisco Collect Data",
-    "techniques": [
-      "t1005",
-      "t1087.001",
-      "t1552.001"
-    ]
-  },
-  {
-    "file": "rules/network/cisco/aaa/cisco_cli_discovery.yml",
-    "title": "Cisco Discovery",
-    "techniques": [
-      "t1016",
-      "t1018",
-      "t1033",
-      "t1049",
-      "t1057",
-      "t1082",
-      "t1083",
-      "t1124",
-      "t1201"
-    ]
-  },
-  {
-    "file": "rules/network/cisco/aaa/cisco_cli_input_capture.yml",
-    "title": "Cisco Show Commands Input",
-    "techniques": [
-      "t1552.003"
     ]
   },
   {
@@ -19520,22 +16910,12 @@
     ]
   },
   {
-    "file": "rules/network/cisco/aaa/cisco_cli_moving_data.yml",
-    "title": "Cisco Stage Data",
-    "techniques": [
-      "t1074",
-      "t1105",
-      "t1560.001"
-    ]
-  },
-  {
     "file": "rules/network/cisco/aaa/cisco_cli_modify_config.yml",
     "title": "Cisco Modify Configuration",
     "techniques": [
       "t1053",
       "t1490",
-      "t1505",
-      "t1565.002"
+      "t1505"
     ]
   },
   {
@@ -19566,24 +16946,6 @@
     "title": "Cisco Clear Logs",
     "techniques": [
       "t1070.003"
-    ]
-  },
-  {
-    "file": "rules/network/juniper/bgp/juniper_bgp_missing_md5.yml",
-    "title": "Juniper BGP Missing MD5",
-    "techniques": [
-      "t1078",
-      "t1110",
-      "t1557"
-    ]
-  },
-  {
-    "file": "rules/network/huawei/bgp/huawei_bgp_auth_failed.yml",
-    "title": "Huawei BGP Authentication Failures",
-    "techniques": [
-      "t1078",
-      "t1110",
-      "t1557"
     ]
   },
   {
@@ -19624,13 +16986,6 @@
     ]
   },
   {
-    "file": "rules/network/zeek/zeek_dns_mining_pools.yml",
-    "title": "DNS Events Related To Mining Pools",
-    "techniques": [
-      "t1569.002"
-    ]
-  },
-  {
     "file": "rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml",
     "title": "MITRE BZAR Indicators for Execution",
     "techniques": [
@@ -19644,13 +16999,6 @@
     "title": "First Time Seen Remote Named Pipe - Zeek",
     "techniques": [
       "t1021.002"
-    ]
-  },
-  {
-    "file": "rules/network/zeek/zeek_http_webdav_put_request.yml",
-    "title": "WebDav Put Request",
-    "techniques": [
-      "t1048.003"
     ]
   },
   {
@@ -19778,20 +17126,6 @@
     ]
   },
   {
-    "file": "rules/network/fortinet/fortigate/fortinet_fortigate_new_firewall_policy_added.yml",
-    "title": "FortiGate - New Firewall Policy Added",
-    "techniques": [
-      "t1686.002"
-    ]
-  },
-  {
-    "file": "rules/network/fortinet/fortigate/fortinet_fortigate_new_firewall_address_object.yml",
-    "title": "FortiGate - Firewall Address Object Added",
-    "techniques": [
-      "t1686.002"
-    ]
-  },
-  {
     "file": "rules/network/fortinet/fortigate/fortinet_fortigate_vpn_ssl_settings_modified.yml",
     "title": "FortiGate - VPN SSL Settings Modified",
     "techniques": [
@@ -19816,8 +17150,7 @@
     "file": "rules/category/database/db_anomalous_query.yml",
     "title": "Suspicious SQL Query",
     "techniques": [
-      "t1190",
-      "t1505.001"
+      "t1190"
     ]
   },
   {

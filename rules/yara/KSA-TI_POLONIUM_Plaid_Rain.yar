@@ -4,6 +4,8 @@ import "hash"
 rule MISP_EVENT_869ff8f3_33d6_49a1_ae3c_eed5e60bbf01_PART1 : generated
 {
 	meta:
+		actor = "POLONIUM (Plaid Rain)"
+		attack_techniques = "T1005,T1016,T1033,T1041,T1059,T1059.001,T1071,T1071.001,T1078,T1078.002,T1083,T1090,T1102,T1102.002,T1105,T1132.001,T1199,T1550,T1550.001,T1567,T1567.002,T1588,T1588.002"
 		MISP_EVENT_INFO = "KSA-TI POLONIUM (Plaid Rain)"
 		MISP_EVENT_UUID = "869ff8f3-33d6-49a1-ae3c-eed5e60bbf01"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"

@@ -2,7 +2,7 @@
 
 Auto-generated detection content for threats targeting **Saudi Arabia** and the wider **Middle East**. Indicators are collected from open threat-intel sources, normalized, filtered for relevance and recency, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
 
-**Last updated:** 2026-10-10 14:29 UTC  |  **Last ingest run:** 2026-10-10 11:46:35
+**Last updated:** 2026-10-10 14:52 UTC  |  **Last ingest run:** 2026-10-10 11:46:35
 
 ## Strategy
 
@@ -18,9 +18,9 @@ Two complementary lenses are combined:
 - **86,744** total indicators collected
 - **892** recent **Saudi**-relevant indicators
 - **1,006** recent **Middle East**-relevant indicators
-- Detection rules: **20** YARA · **109** Suricata · **111** Snort · **2708** Sigma · **1864** STIX2 indicators
+- Detection rules: **20** YARA · **109** Suricata · **111** Snort · **2343** Sigma · **1864** STIX2 indicators
 - **20** MISP events  |  **81** Saudi ransomware victims
-- ATT&CK coverage: **450** techniques across **23** tracked Saudi/MEA actors
+- ATT&CK coverage: **482** techniques across **33** tracked Saudi/MEA actors
 
 ## IOCs by source
 
@@ -167,4 +167,4 @@ AlienVault OTX · abuse.ch (ThreatFox, MalwareBazaar, URLhaus, Feodo Tracker) ·
 
 Auto-generated for defensive detection engineering. Indicators are unverified open-source intelligence and may produce false positives — validate before enforcement. MISP-generated YARA is string-based and intentionally broad.
 
-_Generated 2026-10-10 14:29 UTC._
+_Generated 2026-10-10 14:52 UTC._
