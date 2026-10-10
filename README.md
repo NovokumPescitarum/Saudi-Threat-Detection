@@ -2,7 +2,7 @@
 
 Auto-generated detection content for threats targeting **Saudi Arabia** and the wider **Middle East**. Indicators are collected from open threat-intel sources, normalized, filtered for relevance and recency, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
 
-**Last updated:** 2026-10-10 11:52 UTC  |  **Last ingest run:** 2026-10-10 11:46:35
+**Last updated:** 2026-10-10 14:21 UTC  |  **Last ingest run:** 2026-10-10 11:46:35
 
 ## Strategy
 
@@ -15,11 +15,12 @@ Two complementary lenses are combined:
 
 ## Summary
 
-- **86,726** total indicators collected
-- **886** recent **Saudi**-relevant indicators
-- **994** recent **Middle East**-relevant indicators
-- Detection rules: **19** YARA · **109** Suricata · **111** Snort · **1846** STIX2 indicators
+- **86,744** total indicators collected
+- **892** recent **Saudi**-relevant indicators
+- **1,006** recent **Middle East**-relevant indicators
+- Detection rules: **19** YARA · **109** Suricata · **111** Snort · **2708** Sigma · **1846** STIX2 indicators
 - **19** MISP events  |  **81** Saudi ransomware victims
+- ATT&CK coverage: **450** techniques across **23** tracked Saudi/MEA actors
 
 ## IOCs by source
 
@@ -38,6 +39,7 @@ Two complementary lenses are combined:
 | openphish | 300 |
 | ransomware_live | 67 |
 | dshield | 20 |
+| research:2026-10-10 | 18 |
 | feodo | 6 |
 | urlscan | 2 |
 
@@ -48,9 +50,9 @@ Two complementary lenses are combined:
 | url | 35,538 | 77 |
 | ip | 18,381 | 22 |
 | domain | 9,144 | 2 |
-| sha256 | 8,576 | 694 |
-| md5 | 7,818 | 317 |
-| sha1 | 7,246 | 267 |
+| sha256 | 8,578 | 696 |
+| md5 | 7,832 | 319 |
+| sha1 | 7,248 | 269 |
 | email | 23 | 0 |
 
 ## Saudi-targeting actors
@@ -65,7 +67,7 @@ Two complementary lenses are combined:
 | APT39 (Chafer) | 22 |
 | Agrius (BlackShadow / Pink Sandstorm) | 21 |
 | APT33 (Elfin / Peach Sandstorm) | 20 |
-| Tortoiseshell (Imperial Kitten) | 4 |
+| Tortoiseshell (Imperial Kitten) | 10 |
 
 ## Middle East actors
 
@@ -78,6 +80,7 @@ Two complementary lenses are combined:
 | Arid Viper (APT-C-23 / Desert Falcon) | 45 |
 | SparklingGoblin | 24 |
 | Inception (Cloud Atlas) | 16 |
+| Mirage Kitten | 12 |
 | Mustang Panda (TA416) | 10 |
 | Patchwork (Dropping Elephant) | 4 |
 
@@ -151,6 +154,7 @@ rules/
 ├── yara/            # YARA rules (all_ksa.yar + per-actor)
 ├── ids/suricata/    # Suricata NIDS rules (all_ksa.rules + per-actor)
 ├── ids/snort/       # Snort NIDS rules
+├── sigma/           # behavioural Sigma rules (ATT&CK-mapped to our actors)
 └── siem/stix2/      # STIX2 bundles
 ```
 
@@ -162,4 +166,4 @@ AlienVault OTX · abuse.ch (ThreatFox, MalwareBazaar, URLhaus, Feodo Tracker) ·
 
 Auto-generated for defensive detection engineering. Indicators are unverified open-source intelligence and may produce false positives — validate before enforcement. MISP-generated YARA is string-based and intentionally broad.
 
-_Generated 2026-10-10 11:52 UTC._
+_Generated 2026-10-10 14:21 UTC._
