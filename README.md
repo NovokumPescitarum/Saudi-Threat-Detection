@@ -2,7 +2,7 @@
 
 Auto-generated detection content for threats targeting **Saudi Arabia** and the wider **Middle East**. Indicators are collected from open threat-intel sources, normalized, filtered for relevance and recency, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
 
-**Last updated:** 2026-10-10 10:27 UTC  |  **Last ingest run:** 2026-10-10 10:22:49
+**Last updated:** 2026-10-10 10:46 UTC  |  **Last ingest run:** 2026-10-10 10:41:50
 
 ## Strategy
 
@@ -11,27 +11,28 @@ Two complementary lenses are combined:
 1. **Country-focused** — sources are queried for `saudi`/`ksa`/`gulf`/`mena`, `.sa` domains and Saudi-ransomware victims. These are tagged **Saudi**.
 2. **APT-focused** — indicators are attributed to known threat actors using word-boundary alias matching, then grouped by actor. Saudi-targeting actors are tagged **Saudi**; broader regional actors are tagged **Middle East**.
 
-**Recency:** only indicators observed within the last **90 days** are included (0 older relevant indicators were dropped). Undated indicators from curated feeds are retained.
+**Recency:** only indicators observed within the last **90 days** are included (60 older relevant indicators were dropped). Undated indicators from curated feeds are retained.
 
 ## Summary
 
-- **50,043** total indicators collected
-- **540** recent **Saudi**-relevant indicators
-- **252** recent **Middle East**-relevant indicators
-- Detection rules: **13** YARA · **3** Suricata · **4** Snort · **780** STIX2 indicators
-- **13** MISP events  |  **81** Saudi ransomware victims
+- **50,111** total indicators collected
+- **547** recent **Saudi**-relevant indicators
+- **836** recent **Middle East**-relevant indicators
+- Detection rules: **17** YARA · **10** Suricata · **11** Snort · **1371** STIX2 indicators
+- **17** MISP events  |  **81** Saudi ransomware victims
 
 ## IOCs by source
 
 | Source | Indicators |
 |---|---:|
 | urlhaus | 32,846 |
-| threatfox | 6,482 |
+| threatfox | 6,483 |
 | signature_base | 4,878 |
 | malwarebazaar | 2,853 |
 | otx | 2,743 |
 | eset_malware_ioc | 399 |
 | openphish | 300 |
+| ransomware_live | 67 |
 | tweetfeed | 20 |
 | feodo | 6 |
 
@@ -39,8 +40,8 @@ Two complementary lenses are combined:
 
 | Type | Total | Saudi-relevant |
 |---|---:|---:|
-| url | 33,652 | 1 |
-| domain | 6,801 | 1 |
+| url | 33,719 | 68 |
+| domain | 6,802 | 1 |
 | ip | 2,765 | 0 |
 | sha256 | 2,606 | 188 |
 | md5 | 2,140 | 116 |
@@ -63,15 +64,20 @@ Two complementary lenses are combined:
 
 | Actor | Indicators |
 |---|---:|
+| APT10 (menuPass) | 554 |
 | APT27 (Emissary Panda / LuckyMouse) | 156 |
 | Arid Viper (APT-C-23 / Desert Falcon) | 45 |
 | APT37 (ScarCruft / InkySquid) | 29 |
 | BackdoorDiplomacy | 22 |
+| Inception (Cloud Atlas) | 16 |
+| Mustang Panda (TA416) | 10 |
+| Patchwork (Dropping Elephant) | 4 |
 
 ## Top malware families
 
 | Family | Indicators |
 |---|---:|
+| APT10 IOCs - Source: AlienVault OTX | 544 |
 | muddywater | 183 |
 | oilrig | 144 |
 | aridspy | 45 |
@@ -86,7 +92,6 @@ Two complementary lenses are combined:
 | POLONIUM IOC - Keylogger modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 7 |
 | POLONIUM IOC - PapaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 7 |
 | ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/ | 6 |
-| Bronze Union IOC - MD5 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION | 5 |
 
 ## Ransomware victims (Saudi Arabia)
 
@@ -122,8 +127,12 @@ _81 victim listings tracked from public ransomware leak sites (via ransomware.li
 | 3473 | KSA-TI MuddyWater (Seedworm / Static Kitten) | 183 |
 | 3474 | KSA-TI POLONIUM (Plaid Rain) | 106 |
 | 3475 | KSA-TI Tortoiseshell (Imperial Kitten) | 4 |
-| 3476 | KSA-TI Unattributed | 2 |
+| 3476 | KSA-TI Unattributed | 9 |
 | 3477 | KSA-TI XENOTIME (TRITON/TRISIS) | 26 |
+| 3478 | KSA-TI APT10 (menuPass) | 554 |
+| 3479 | KSA-TI Inception (Cloud Atlas) | 16 |
+| 3480 | KSA-TI Mustang Panda (TA416) | 10 |
+| 3481 | KSA-TI Patchwork (Dropping Elephant) | 4 |
 
 ## Content
 
@@ -143,4 +152,4 @@ AlienVault OTX · abuse.ch (ThreatFox, MalwareBazaar, URLhaus, Feodo Tracker) ·
 
 Auto-generated for defensive detection engineering. Indicators are unverified open-source intelligence and may produce false positives — validate before enforcement. MISP-generated YARA is string-based and intentionally broad.
 
-_Generated 2026-10-10 10:27 UTC._
+_Generated 2026-10-10 10:46 UTC._
