@@ -4,6 +4,8 @@ import "hash"
 rule MISP_EVENT_c596153e_3179_4fd9_b904_c451599fee48_PART1 : generated
 {
 	meta:
+		actor = "APT33 (Elfin / Peach Sandstorm)"
+		attack_techniques = "T1003,T1003.001,T1003.002,T1003.004,T1003.005,T1003.006,T1005,T1007,T1010,T1012,T1016,T1018,T1020,T1021,T1021.001,T1021.002,T1021.003,T1021.004,T1027,T1027.002,T1027.005,T1027.009,T1027.010,T1027.011,T1033"
 		MISP_EVENT_INFO = "KSA-TI APT33 (Elfin / Peach Sandstorm)"
 		MISP_EVENT_UUID = "c596153e-3179-4fd9-b904-c451599fee48"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"

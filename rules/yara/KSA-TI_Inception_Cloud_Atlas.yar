@@ -4,6 +4,8 @@ import "hash"
 rule MISP_EVENT_4007401d_9ffc_495a_a6d3_dafa7df77238_PART1 : generated
 {
 	meta:
+		actor = "Inception (Cloud Atlas)"
+		attack_techniques = "T1003,T1003.001,T1003.004,T1003.005,T1005,T1016,T1027,T1033,T1041,T1057,T1059,T1059.001,T1059.005,T1069,T1069.002,T1070,T1070.004,T1071,T1071.001,T1082,T1083,T1090,T1090.003,T1102,T1105"
 		MISP_EVENT_INFO = "KSA-TI Inception (Cloud Atlas)"
 		MISP_EVENT_UUID = "4007401d-9ffc-495a-a6d3-dafa7df77238"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"

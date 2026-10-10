@@ -318,3 +318,14 @@ alert ip $HOME_NET any -> 216.238.121.164 any (msg: "MISP e3482 [source:otx,acto
 # $SMTP_SERVERS - All your internal SMTP servers
 # $HTTP_PORTS   - The ports used to contain HTTP traffic (not required with suricata export)
 # 
+# ---- event 3484: KSA-TI Mirage Kitten ----
+# MISP export of IDS rules - optimized for snort
+#
+# These NIDS rules contain some variables that need to exist in your configuration.
+# Make sure you have set:
+#
+# $HOME_NET     - Your internal network range
+# $EXTERNAL_NET - The network considered as outside
+# $SMTP_SERVERS - All your internal SMTP servers
+# $HTTP_PORTS   - The ports used to contain HTTP traffic (not required with suricata export)
+# 

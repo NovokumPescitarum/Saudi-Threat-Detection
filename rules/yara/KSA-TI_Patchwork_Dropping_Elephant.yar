@@ -4,6 +4,8 @@ import "hash"
 rule MISP_EVENT_426d7196_ac60_446c_a69b_1d237f2a6290_PART1 : generated
 {
 	meta:
+		actor = "Patchwork (Dropping Elephant)"
+		attack_techniques = "T1003,T1003.001,T1005,T1010,T1012,T1016,T1020,T1021,T1021.001,T1027,T1027.001,T1027.002,T1027.005,T1027.010,T1033,T1036,T1036.005,T1039,T1047,T1053,T1053.005,T1055,T1055.001,T1055.012,T1056"
 		MISP_EVENT_INFO = "KSA-TI Patchwork (Dropping Elephant)"
 		MISP_EVENT_UUID = "426d7196-ac60-446c-a69b-1d237f2a6290"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"

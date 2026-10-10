@@ -2,7 +2,7 @@
 
 Auto-generated detection content for threats targeting **Saudi Arabia** and the wider **Middle East**. Indicators are collected from open threat-intel sources, normalized, filtered for relevance and recency, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
 
-**Last updated:** 2026-10-10 14:21 UTC  |  **Last ingest run:** 2026-10-10 11:46:35
+**Last updated:** 2026-10-10 14:29 UTC  |  **Last ingest run:** 2026-10-10 11:46:35
 
 ## Strategy
 
@@ -18,8 +18,8 @@ Two complementary lenses are combined:
 - **86,744** total indicators collected
 - **892** recent **Saudi**-relevant indicators
 - **1,006** recent **Middle East**-relevant indicators
-- Detection rules: **19** YARA · **109** Suricata · **111** Snort · **2708** Sigma · **1846** STIX2 indicators
-- **19** MISP events  |  **81** Saudi ransomware victims
+- Detection rules: **20** YARA · **109** Suricata · **111** Snort · **2708** Sigma · **1864** STIX2 indicators
+- **20** MISP events  |  **81** Saudi ransomware victims
 - ATT&CK coverage: **450** techniques across **23** tracked Saudi/MEA actors
 
 ## IOCs by source
@@ -137,7 +137,7 @@ _81 victim listings tracked from public ransomware leak sites (via ransomware.li
 | 3472 | KSA-TI BackdoorDiplomacy | 66 |
 | 3473 | KSA-TI MuddyWater (Seedworm / Static Kitten) | 183 |
 | 3474 | KSA-TI POLONIUM (Plaid Rain) | 316 |
-| 3475 | KSA-TI Tortoiseshell (Imperial Kitten) | 4 |
+| 3475 | KSA-TI Tortoiseshell (Imperial Kitten) | 10 |
 | 3476 | KSA-TI Unattributed | 11 |
 | 3477 | KSA-TI XENOTIME (TRITON/TRISIS) | 26 |
 | 3478 | KSA-TI APT10 (menuPass) | 580 |
@@ -146,6 +146,7 @@ _81 victim listings tracked from public ransomware leak sites (via ransomware.li
 | 3481 | KSA-TI Patchwork (Dropping Elephant) | 4 |
 | 3482 | KSA-TI FamousSparrow | 127 |
 | 3483 | KSA-TI SparklingGoblin | 24 |
+| 3484 | KSA-TI Mirage Kitten | 12 |
 
 ## Content
 
@@ -166,4 +167,4 @@ AlienVault OTX · abuse.ch (ThreatFox, MalwareBazaar, URLhaus, Feodo Tracker) ·
 
 Auto-generated for defensive detection engineering. Indicators are unverified open-source intelligence and may produce false positives — validate before enforcement. MISP-generated YARA is string-based and intentionally broad.
 
-_Generated 2026-10-10 14:21 UTC._
+_Generated 2026-10-10 14:29 UTC._

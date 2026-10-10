@@ -5,6 +5,8 @@ import "hash"
 rule MISP_EVENT_a11409e2_7271_4b7e_a78c_1511c897dd63_PART1 : generated
 {
 	meta:
+		actor = "APT27 (Emissary Panda / LuckyMouse)"
+		attack_techniques = "T1001.003,T1003,T1003.001,T1003.002,T1003.003,T1003.004,T1003.006,T1005,T1007,T1012,T1016,T1018,T1021,T1021.001,T1021.002,T1021.003,T1021.004,T1021.005,T1021.006,T1027,T1027.001,T1027.002,T1027.005,T1027.011,T1030"
 		MISP_EVENT_INFO = "KSA-TI APT27 (Emissary Panda / LuckyMouse)"
 		MISP_EVENT_UUID = "a11409e2-7271-4b7e-a78c-1511c897dd63"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -175,6 +177,8 @@ import "hash"
 rule MISP_EVENT_c596153e_3179_4fd9_b904_c451599fee48_PART1 : generated
 {
 	meta:
+		actor = "APT33 (Elfin / Peach Sandstorm)"
+		attack_techniques = "T1003,T1003.001,T1003.002,T1003.004,T1003.005,T1003.006,T1005,T1007,T1010,T1012,T1016,T1018,T1020,T1021,T1021.001,T1021.002,T1021.003,T1021.004,T1027,T1027.002,T1027.005,T1027.009,T1027.010,T1027.011,T1033"
 		MISP_EVENT_INFO = "KSA-TI APT33 (Elfin / Peach Sandstorm)"
 		MISP_EVENT_UUID = "c596153e-3179-4fd9-b904-c451599fee48"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -209,6 +213,8 @@ import "hash"
 rule MISP_EVENT_f9444da1_2438_4585_b553_cde8b6b4074a_PART1 : generated
 {
 	meta:
+		actor = "APT34 (OilRig / Helix Kitten)"
+		attack_techniques = "T1003,T1003.001,T1003.002,T1003.004,T1003.005,T1003.006,T1005,T1007,T1008,T1012,T1016,T1018,T1020,T1021,T1021.001,T1021.002,T1021.004,T1027,T1027.002,T1027.003,T1027.005,T1027.010,T1027.011,T1030,T1033"
 		MISP_EVENT_INFO = "KSA-TI APT34 (OilRig / Helix Kitten)"
 		MISP_EVENT_UUID = "f9444da1-2438-4585-b553-cde8b6b4074a"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -367,6 +373,8 @@ import "hash"
 rule MISP_EVENT_54ce7afa_9c73_462e_90fe_257ec48939f2_PART1 : generated
 {
 	meta:
+		actor = "APT37 (ScarCruft / InkySquid)"
+		attack_techniques = "T1001.003,T1003,T1003.001,T1003.002,T1005,T1007,T1010,T1012,T1016,T1018,T1021,T1021.001,T1021.002,T1021.003,T1021.004,T1021.006,T1027,T1027.003,T1027.005,T1030,T1033,T1036,T1041,T1046,T1047"
 		MISP_EVENT_INFO = "KSA-TI APT37 (ScarCruft / InkySquid)"
 		MISP_EVENT_UUID = "54ce7afa-9c73-462e-90fe-257ec48939f2"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -452,6 +460,8 @@ import "hash"
 rule MISP_EVENT_7f52eb01_ec90_4d11_9e32_6fba50d8c557_PART1 : generated
 {
 	meta:
+		actor = "APT39 (Chafer)"
+		attack_techniques = "T1003,T1003.001,T1003.002,T1003.003,T1003.004,T1003.006,T1005,T1010,T1012,T1016,T1018,T1021,T1021.001,T1021.002,T1021.004,T1027,T1027.002,T1033,T1036,T1036.005,T1040,T1041,T1046,T1047,T1048"
 		MISP_EVENT_INFO = "KSA-TI APT39 (Chafer)"
 		MISP_EVENT_UUID = "7f52eb01-ec90-4d11-9e32-6fba50d8c557"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -488,6 +498,8 @@ import "hash"
 rule MISP_EVENT_7f1c7f72_9267_4567_9ad2_cc11fa364151_PART1 : generated
 {
 	meta:
+		actor = "Agrius (BlackShadow / Pink Sandstorm)"
+		attack_techniques = "T1003,T1003.001,T1003.002,T1003.004,T1003.006,T1005,T1016,T1018,T1021,T1021.001,T1027,T1027.009,T1033,T1036,T1036.004,T1040,T1041,T1046,T1053,T1053.005,T1057,T1059,T1059.001,T1059.003,T1059.005"
 		MISP_EVENT_INFO = "KSA-TI Agrius (BlackShadow / Pink Sandstorm)"
 		MISP_EVENT_UUID = "7f1c7f72-9267-4567-9ad2-cc11fa364151"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -523,6 +535,8 @@ import "hash"
 rule MISP_EVENT_da1b4e97_deaf_42cc_aab9_5e3ee1073352_PART1 : generated
 {
 	meta:
+		actor = "Arid Viper (APT-C-23 / Desert Falcon)"
+		attack_techniques = "T1027,T1033,T1047,T1056,T1056.001,T1059,T1059.003,T1071,T1071.001,T1082,T1083,T1105,T1113,T1119,T1123,T1518,T1518.001,T1547,T1547.009,T1560,T1560.001,T1564,T1564.001"
 		MISP_EVENT_INFO = "KSA-TI Arid Viper (APT-C-23 / Desert Falcon)"
 		MISP_EVENT_UUID = "da1b4e97-deaf-42cc-aab9-5e3ee1073352"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -582,6 +596,8 @@ import "hash"
 rule MISP_EVENT_0ae43b70_f656_4452_aab9_7070f18e50ff_PART1 : generated
 {
 	meta:
+		actor = "BackdoorDiplomacy"
+		attack_techniques = "T1003,T1003.001,T1003.002,T1003.004,T1003.006,T1005,T1010,T1016,T1018,T1021,T1021.001,T1027,T1027.002,T1033,T1036,T1036.004,T1036.005,T1040,T1046,T1049,T1053,T1053.005,T1055,T1055.001,T1056"
 		MISP_EVENT_INFO = "KSA-TI BackdoorDiplomacy"
 		MISP_EVENT_UUID = "0ae43b70-f656-4452-aab9-7070f18e50ff"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -662,6 +678,8 @@ import "hash"
 rule MISP_EVENT_a4e8c29b_bf95_415e_88d9_576e0dc69f4e_PART1 : generated
 {
 	meta:
+		actor = "MuddyWater (Seedworm / Static Kitten)"
+		attack_techniques = "T1003,T1003.001,T1003.002,T1003.003,T1003.004,T1003.005,T1003.006,T1005,T1012,T1016,T1018,T1020,T1021,T1021.001,T1021.003,T1021.004,T1027,T1027.003,T1027.004,T1027.005,T1027.010,T1030,T1033,T1036,T1036.004"
 		MISP_EVENT_INFO = "KSA-TI MuddyWater (Seedworm / Static Kitten)"
 		MISP_EVENT_UUID = "a4e8c29b-bf95-415e-88d9-576e0dc69f4e"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -1197,6 +1215,12 @@ rule MISP_EVENT_68d09893_c51c_4c15_b475_d542f1cb00bd_PART1 : generated
 		or hash.sha256(0, filesize) == "612bdfb4f6eaf920a7a41fa06de8d99f6ecf6ad147374efa6eb1d5aff91df558"
 		or hash.sha256(0, filesize) == "1534f95f49ddf2ada38561705f901e5938470c1678d6a81f0f4177ba7412ef5b"
 		or hash.sha256(0, filesize) == "da65aa439e90d21b2cf53afef6491e7dcdca19dd1bbec50329d53f3d977ee089"
+		or hash.md5(0, filesize) == "db58adc4a6c192520ed509b20a928279"
+		or hash.md5(0, filesize) == "07dd28b748656e9e1a870c538d6df68c"
+		or hash.sha1(0, filesize) == "c0dba95939f7fc1a55b7aa6c132a204f073a981d"
+		or hash.sha1(0, filesize) == "e39bb97415978fa3484298735bd020662a51f3ab"
+		or hash.sha256(0, filesize) == "d23c1b7b917f53e4e5a608e9870e574f7461eead277726249c4acf4a2b0bef4b"
+		or hash.sha256(0, filesize) == "597c40e0b23f38f30a3c85be0510b14985b2948895819c899e3f3c8f200aa437"
 }
 // =====================================   AS-IS  ====================================
 
@@ -1274,6 +1298,8 @@ import "hash"
 rule MISP_EVENT_086d9866_1762_45fc_846f_14b056c4a7e0_PART1 : generated
 {
 	meta:
+		actor = "APT10 (menuPass)"
+		attack_techniques = "T1001.003,T1003,T1003.001,T1003.002,T1003.003,T1003.004,T1003.006,T1005,T1006,T1007,T1010,T1012,T1014,T1016,T1018,T1021,T1021.001,T1021.002,T1021.003,T1021.004,T1021.006,T1027,T1027.001,T1027.002,T1027.005"
 		MISP_EVENT_INFO = "KSA-TI APT10 (menuPass)"
 		MISP_EVENT_UUID = "086d9866-1762-45fc-846f-14b056c4a7e0"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -1870,6 +1896,8 @@ import "hash"
 rule MISP_EVENT_4007401d_9ffc_495a_a6d3_dafa7df77238_PART1 : generated
 {
 	meta:
+		actor = "Inception (Cloud Atlas)"
+		attack_techniques = "T1003,T1003.001,T1003.004,T1003.005,T1005,T1016,T1027,T1033,T1041,T1057,T1059,T1059.001,T1059.005,T1069,T1069.002,T1070,T1070.004,T1071,T1071.001,T1082,T1083,T1090,T1090.003,T1102,T1105"
 		MISP_EVENT_INFO = "KSA-TI Inception (Cloud Atlas)"
 		MISP_EVENT_UUID = "4007401d-9ffc-495a-a6d3-dafa7df77238"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -1900,6 +1928,8 @@ import "hash"
 rule MISP_EVENT_5c4d619e_af25_4ddf_8d98_62e5ac99ee40_PART1 : generated
 {
 	meta:
+		actor = "Mustang Panda (TA416)"
+		attack_techniques = "T1001.003,T1003,T1003.001,T1003.002,T1003.003,T1003.004,T1003.006,T1005,T1007,T1010,T1012,T1014,T1016,T1018,T1021,T1021.001,T1021.002,T1021.003,T1021.004,T1021.006,T1027,T1027.001,T1027.002,T1027.005,T1027.011"
 		MISP_EVENT_INFO = "KSA-TI Mustang Panda (TA416)"
 		MISP_EVENT_UUID = "5c4d619e-af25-4ddf-8d98-62e5ac99ee40"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -1924,6 +1954,8 @@ import "hash"
 rule MISP_EVENT_426d7196_ac60_446c_a69b_1d237f2a6290_PART1 : generated
 {
 	meta:
+		actor = "Patchwork (Dropping Elephant)"
+		attack_techniques = "T1003,T1003.001,T1005,T1010,T1012,T1016,T1020,T1021,T1021.001,T1027,T1027.001,T1027.002,T1027.005,T1027.010,T1033,T1036,T1036.005,T1039,T1047,T1053,T1053.005,T1055,T1055.001,T1055.012,T1056"
 		MISP_EVENT_INFO = "KSA-TI Patchwork (Dropping Elephant)"
 		MISP_EVENT_UUID = "426d7196-ac60-446c-a69b-1d237f2a6290"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
@@ -2113,5 +2145,31 @@ rule MISP_EVENT_86962c95_0fd2_48d2_8d04_ed9e36a79c94_PART1 : generated
 		or hash.sha256(0, filesize) == "9269dc68d46630c0d534bf62a299037fd3a124a6459d97692c25ffb89ccd1f08"
 		or hash.sha256(0, filesize) == "0bff46518b35ddfe37f4a7820286aab829d81f1480d9eeca5aaedc9ceda6724f"
 		or hash.sha256(0, filesize) == "a5bad9b8fe8d51400e44646a946f96e33421a0b7ff2bae60b3e0b5621e4fcaf1"
+}
+// =====================================   AS-IS  ====================================
+
+// ---- event 3484: KSA-TI Mirage Kitten ----
+// ===================================== GENERATED ====================================
+
+import "hash"
+rule MISP_EVENT_71712d0d_8199_4cf8_a24a_dda398fc6967_PART1 : generated
+{
+	meta:
+		MISP_EVENT_INFO = "KSA-TI Mirage Kitten"
+		MISP_EVENT_UUID = "71712d0d-8199-4cf8-a24a-dda398fc6967"
+		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
+	condition:
+		hash.md5(0, filesize) == "de5af16a3757ef700b01dc34d67079ae"
+		or hash.md5(0, filesize) == "e259c5edf158aac4cfe14f77ddd0b196"
+		or hash.md5(0, filesize) == "810f8e3b88eb05f710c09552941d6f56"
+		or hash.md5(0, filesize) == "be086789568441d0d7e4679aee51f566"
+		or hash.md5(0, filesize) == "cbaaf0900a13f28e380f49adecec932c"
+		or hash.md5(0, filesize) == "1ea83e4e4592b01e4acab63eb867bee5"
+		or hash.md5(0, filesize) == "291ac3abe73c5158e59a437b75d5f0aa"
+		or hash.md5(0, filesize) == "366515822d5ac1cc500711ef57a2e32e"
+		or hash.md5(0, filesize) == "cf449f1992c2819e62ac44a0b06ac2e7"
+		or hash.md5(0, filesize) == "0962f56d7ec69f4f2a0162dcbe22116b"
+		or hash.md5(0, filesize) == "e95a4366686e3f786ea3c056fab5b0da"
+		or hash.md5(0, filesize) == "795e053a990a1569ffdcb57f48f6d085"
 }
 // =====================================   AS-IS  ====================================

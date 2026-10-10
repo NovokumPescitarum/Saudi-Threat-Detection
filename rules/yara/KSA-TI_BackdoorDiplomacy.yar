@@ -4,6 +4,8 @@ import "hash"
 rule MISP_EVENT_0ae43b70_f656_4452_aab9_7070f18e50ff_PART1 : generated
 {
 	meta:
+		actor = "BackdoorDiplomacy"
+		attack_techniques = "T1003,T1003.001,T1003.002,T1003.004,T1003.006,T1005,T1010,T1016,T1018,T1021,T1021.001,T1027,T1027.002,T1033,T1036,T1036.004,T1036.005,T1040,T1046,T1049,T1053,T1053.005,T1055,T1055.001,T1056"
 		MISP_EVENT_INFO = "KSA-TI BackdoorDiplomacy"
 		MISP_EVENT_UUID = "0ae43b70-f656-4452-aab9-7070f18e50ff"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"

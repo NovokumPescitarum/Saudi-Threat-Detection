@@ -4,6 +4,8 @@ import "hash"
 rule MISP_EVENT_7f1c7f72_9267_4567_9ad2_cc11fa364151_PART1 : generated
 {
 	meta:
+		actor = "Agrius (BlackShadow / Pink Sandstorm)"
+		attack_techniques = "T1003,T1003.001,T1003.002,T1003.004,T1003.006,T1005,T1016,T1018,T1021,T1021.001,T1027,T1027.009,T1033,T1036,T1036.004,T1040,T1041,T1046,T1053,T1053.005,T1057,T1059,T1059.001,T1059.003,T1059.005"
 		MISP_EVENT_INFO = "KSA-TI Agrius (BlackShadow / Pink Sandstorm)"
 		MISP_EVENT_UUID = "7f1c7f72-9267-4567-9ad2-cc11fa364151"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"

@@ -4,6 +4,8 @@ import "hash"
 rule MISP_EVENT_a11409e2_7271_4b7e_a78c_1511c897dd63_PART1 : generated
 {
 	meta:
+		actor = "APT27 (Emissary Panda / LuckyMouse)"
+		attack_techniques = "T1001.003,T1003,T1003.001,T1003.002,T1003.003,T1003.004,T1003.006,T1005,T1007,T1012,T1016,T1018,T1021,T1021.001,T1021.002,T1021.003,T1021.004,T1021.005,T1021.006,T1027,T1027.001,T1027.002,T1027.005,T1027.011,T1030"
 		MISP_EVENT_INFO = "KSA-TI APT27 (Emissary Panda / LuckyMouse)"
 		MISP_EVENT_UUID = "a11409e2-7271-4b7e-a78c-1511c897dd63"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
