@@ -17,6 +17,8 @@ rule MISP_EVENT_e1133353_39e6_4820_837b_847875e2706d_PART1 : generated
 		$ = "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=6f4e3a42-0adb-422b-ba3e-5bd972e17938" ascii wide
 		$ = "http://ctyfftrjgtwdjzlgqh4avbd35sqrs6tde4oyam2ufbjch6oqpqtkdtid.onion/10f9693f-9d25-4de6-8941-411cfe9f3020" ascii wide
 		$ = "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=7dc6bb41-0cc2-4c0a-8b60-dffc1a57317a" ascii wide
+		$ = "admin.etabeb.com" ascii wide
+		$ = "https://admin.etabeb.com/login?ReturnUrl=%2f" ascii wide
 	condition:
 		any of them
 }

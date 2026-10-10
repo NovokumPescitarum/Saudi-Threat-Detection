@@ -7,6 +7,33 @@ rule MISP_EVENT_086d9866_1762_45fc_846f_14b056c4a7e0_PART1 : generated
 		MISP_EVENT_INFO = "KSA-TI APT10 (menuPass)"
 		MISP_EVENT_UUID = "086d9866-1762-45fc-846f-14b056c4a7e0"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
+	strings:
+		$ = "2014.zzux.com" ascii wide
+		$ = "app.lehigtapp.com" ascii wide
+		$ = "apple.cmdnetview.com" ascii wide
+		$ = "area.wthelpdesk.com" ascii wide
+		$ = "cia.toh.info" ascii wide
+		$ = "contractus.qpoe.com" ascii wide
+		$ = "cvnx.zyns.com" ascii wide
+		$ = "dick.ccfchrist.com" ascii wide
+		$ = "fbi.sexxxy.biz" ascii wide
+		$ = "fukuoka.cloud-maste.com" ascii wide
+		$ = "inspgon.re26.com" ascii wide
+		$ = "iphone.vizvaz.com" ascii wide
+		$ = "jepsen.r3u8.com" ascii wide
+		$ = "jimin.jimindaddy.com" ascii wide
+		$ = "kawasaki.cloud-maste.com" ascii wide
+		$ = "kawasaki.unhamj.com" ascii wide
+		$ = "lion.wchildress.com" ascii wide
+		$ = "msn.incloud-go.com" ascii wide
+		$ = "nttdata.otzo.com" ascii wide
+		$ = "nunluck.re26.com" ascii wide
+		$ = "sakai.unhamj.com" ascii wide
+		$ = "scorpion.poulsenv.com" ascii wide
+		$ = "trout.belowto.com" ascii wide
+		$ = "www.mseupdate.ourhobby.com" ascii wide
+		$ = "yahoo.incloud-go.com" ascii wide
+		$ = "zebra.wthelpdesk.com" ascii wide
 	condition:
 		hash.md5(0, filesize) == "001b8f696b6576798517168cd0a0fb44"
 		or hash.md5(0, filesize) == "00591821f328911380277272164d08cd"
@@ -562,5 +589,6 @@ rule MISP_EVENT_086d9866_1762_45fc_846f_14b056c4a7e0_PART1 : generated
 		or hash.sha256(0, filesize) == "fcccc611730474775ff1cfd4c60481deef586f01191348b07d7a143d174a07b0"
 		or hash.sha256(0, filesize) == "fd6a956a7708708cddff78c8505c7db73d7c4e961da8a3c00cc5a51171a92b7b"
 		or hash.sha256(0, filesize) == "ff4979980b00773c414c3cd5571eae8cc3916d3607e9621400f0302f1e138882"
+		or any of them
 }
 // =====================================   AS-IS  ====================================
