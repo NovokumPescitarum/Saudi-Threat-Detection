@@ -15,6 +15,23 @@ rule MISP_EVENT_064fcdfc_2c6d_4f3f_bad4_089237b89744_PART1 : generated
 		$ = "servicesystem.serveirc.com" ascii wide
 		$ = "service.chrome-up.date" ascii wide
 		$ = "www7.chrome-up.date" ascii wide
+		$ = "ntg-sa.com" ascii wide
+		$ = "mol.com-ho.me" ascii wide
+		$ = "analytics-google.org" ascii wide
+		$ = "briefl.ink" ascii wide
+		$ = "chrome-up.date" ascii wide
+		$ = "microsoftexplorerservices.cloud" ascii wide
+		$ = "msservice.site" ascii wide
+		$ = "its.com-ho.me" ascii wide
+		$ = "syn.timezone.live" ascii wide
+		$ = "www.microsoftsubsystem.com-adm.in" ascii wide
+		$ = "www1.chrome-up.date" ascii wide
+		$ = "http://139.59.46.154:3485/eiloShaegae1" ascii wide
+		$ = "http://139.59.46.154:3485" ascii wide
+		$ = "http://139.59.46.154:3485/eiloShaegae1'" ascii wide
+		$ = "http://45.76.128.165:4443/0w0O6" ascii wide
+		$ = "http://service.chrome-up.date:8080" ascii wide
+		$ = "http://www7.chrome-up.date/0m5EE" ascii wide
 	condition:
 		hash.sha256(0, filesize) == "f912d40de9fe9a726448c1d84dfba2d4941f57210b2dbc035f5d34d68e8ac143"
 		or hash.sha256(0, filesize) == "ea139a73f8ec75ea60dfa87027c7c3ef4ed61b45e1acb5d1650cc54e658984ba"
@@ -58,6 +75,77 @@ rule MISP_EVENT_064fcdfc_2c6d_4f3f_bad4_089237b89744_PART1 : generated
 		or hash.sha256(0, filesize) == "66d24a529308d8ab7b27ddd43a6c2db84107b831257efb664044ec4437f9487b"
 		or hash.sha256(0, filesize) == "e837f6b814c09900726dac2cf55f41babf361152875ba2a765a34ee5cc496087"
 		or hash.sha256(0, filesize) == "33ee8a57e142e752a9c8960c4f38b5d3ff82bf17ec060e4114f5b15d22aa902e"
+		or hash.md5(0, filesize) == "03ea9457bf71d51d8109e737158be888"
+		or hash.md5(0, filesize) == "45b0e5a457222455384713905f886bd4"
+		or hash.md5(0, filesize) == "ecfc0275c7a73a9c7775130ebca45b74"
+		or hash.md5(0, filesize) == "f4d18316e367a80e1005f38445421b1f"
+		or hash.md5(0, filesize) == "012f79570f720b997b9ef4ef327dd2da"
+		or hash.md5(0, filesize) == "07d6406036d6e06dc8019e3ade6ee7de"
+		or hash.md5(0, filesize) == "2a0df97277ddb361cecf8726df6d78ac"
+		or hash.md5(0, filesize) == "2c60f38f94dedee47aed8dc1f8969a2b"
+		or hash.md5(0, filesize) == "36cb6319957b1a6fb8efdbeb212ba627"
+		or hash.md5(0, filesize) == "3b3aa592dfdbadfa6272641644eda9ac"
+		or hash.md5(0, filesize) == "3c8a142d2e3b84fb0d210250af77cc9b"
+		or hash.md5(0, filesize) == "40f45c8f4850eba18da31db7b4ffeb5d"
+		or hash.md5(0, filesize) == "559674ae5e5de9b6c35ebed07e91c944"
+		or hash.md5(0, filesize) == "5e2dc647b403a5b90a0a1fa5ad057202"
+		or hash.md5(0, filesize) == "839567d62f1be253fc5a2daf1ab71bc8"
+		or hash.md5(0, filesize) == "94c053324907ce48303f483abbfb483d"
+		or hash.md5(0, filesize) == "97454efcab28e64ac5400e63780af764"
+		or hash.md5(0, filesize) == "9f83d9cb2678ba475978a75b34971d52"
+		or hash.md5(0, filesize) == "a183ad1a202315823feda8109aa60909"
+		or hash.md5(0, filesize) == "b36d17390de4bc1d74ff55f2bd8dc1cb"
+		or hash.md5(0, filesize) == "c153a4ef6622a5c1553690bf3dcf045d"
+		or hash.md5(0, filesize) == "cb9ecb5a73d009cbc8d65532216989cc"
+		or hash.md5(0, filesize) == "cced9d843cd9dce4a835777798c58904"
+		or hash.md5(0, filesize) == "d2e5f99a715019056b87193e73a0dcdb"
+		or hash.md5(0, filesize) == "d30b8468d16b631cafe458fd94cc3196"
+		or hash.md5(0, filesize) == "dba924927bfa484ea34d37e10f742b95"
+		or hash.md5(0, filesize) == "eade8e280b5c372989a520e49b4a1aab"
+		or hash.md5(0, filesize) == "ece5b62a4ed4e88dab4f1b5451f54794"
+		or hash.md5(0, filesize) == "f0a038b92bb9deacf6cf8b38a6cdc733"
+		or hash.md5(0, filesize) == "f9adf73bf1cdd7cd278e5137d966ddd4"
+		or hash.sha1(0, filesize) == "080d186e20e23ac49a6b6570fbc8633a56e5469f"
+		or hash.sha1(0, filesize) == "135906151d50ef988a47361c05c2602ba29435a8"
+		or hash.sha1(0, filesize) == "19efc9f4cf9e334f37577621e9718693a47e48ae"
+		or hash.sha1(0, filesize) == "2079aa6e288bda7af96a2aa03702a38c29b91479"
+		or hash.sha1(0, filesize) == "22f3f57850ede3019b4825aa6c8808cc711223b9"
+		or hash.sha1(0, filesize) == "25b09cdd135197ccd8981488f38b045000297439"
+		or hash.sha1(0, filesize) == "2d271a0a7cd70d8d77c230a5d9c946dbaed7be25"
+		or hash.sha1(0, filesize) == "3348ab2a820233de1dd5c19457e3d86304519407"
+		or hash.sha1(0, filesize) == "38418f7adb2afade001bd46a3b6aa6ec314b95de"
+		or hash.sha1(0, filesize) == "3d1fe251f713f6175edd33fc5316472561c6e88a"
+		or hash.sha1(0, filesize) == "3f861d1d419987fd8e4427be69c85c1b9cd39941"
+		or hash.sha1(0, filesize) == "4a0427984f983463f93ae2437d58e56e2599daf2"
+		or hash.sha1(0, filesize) == "50860e55ee4891ea5095afb533367f0aea5b41c5"
+		or hash.sha1(0, filesize) == "61ed2d73f33ec44efc485c0beb69d17a3919916e"
+		or hash.sha1(0, filesize) == "7d1c709b5fde4d05951b9715d59edb16e68d3ece"
+		or hash.sha1(0, filesize) == "81dbdcf39893545d049c101bd79f4ca887452608"
+		or hash.sha1(0, filesize) == "84661e42d9970f9020a6c95c353c9bf8599c5688"
+		or hash.sha1(0, filesize) == "9d0aa52036eddb3621946d155ff76584782c3e48"
+		or hash.sha1(0, filesize) == "b0731847131bec0c24b68e4383ad548a22710a9a"
+		or hash.sha1(0, filesize) == "bad12e9c0b759d4653b4b24ef0b90b035efc019d"
+		or hash.sha1(0, filesize) == "c6dec5e628696928ef095119e155734c3968a142"
+		or hash.sha1(0, filesize) == "c9915a09bdd7600304a5e2a147bba87c64230555"
+		or hash.sha1(0, filesize) == "cc4db59fb794c265fc6b524737f15e3324cd7abb"
+		or hash.sha1(0, filesize) == "d20168c523058c7a82f6d79ef63ea546c794e57b"
+		or hash.sha1(0, filesize) == "d69fad4a24aade835197d060947719f65528fe84"
+		or hash.sha1(0, filesize) == "db3f1d34dba8e18c7e6fdfa26d694d27a9136244"
+		or hash.sha1(0, filesize) == "db6f24e4cae7ef29a2ef0c92d1c6c08c40c0ec89"
+		or hash.sha1(0, filesize) == "f0c029289866fab34d1bc6fd7985b60e317c1b88"
+		or hash.sha1(0, filesize) == "f6a289d26901abb5fc56e20170e9fe2c9c1b12ca"
+		or hash.sha1(0, filesize) == "f70f36b30baa58946ac7c7768c18d29a56b72552"
+		or hash.sha256(0, filesize) == "133959be8313a372f7a8d95762722a6ca02bc30aaffde0cbcf6ba402426d02f5"
+		or hash.sha256(0, filesize) == "1c550dc73b7a39b0cd21d3de7e6c26ece156253ac96f032efc0e7fcc6bc872ce"
+		or hash.sha256(0, filesize) == "6c195ea18c05bbf091f09873ed9cd533ec7c8de7a831b85690e48290b579634b"
+		or hash.sha256(0, filesize) == "7e57e35f8fce0efc3b944a7545736fa419e9888514fcd9e098c883b8d85e7e73"
+		or hash.sha256(0, filesize) == "82779504d3fa0ffc8506ab69de9cb4d8f6415adbb11a9b8312828c539cf10190"
+		or hash.sha256(0, filesize) == "b2ea3fcd2bc493a5ac86e47029b076716ed22ef4487f9090f4aa1923a48015d6"
+		or hash.sha256(0, filesize) == "cca268c13885ad5751eb70371bbc9ce8c8795654fedb90d9e3886cbcfe323671"
+		or hash.sha256(0, filesize) == "d08d737fa59edbea4568100cf83cff7bf930087aaa640f1b4edf48eea4e07b19"
+		or hash.sha256(0, filesize) == "d8731a94d17e0740184910ec81ba703bad5ff7afc92ba056f200533f668e07bf"
+		or hash.sha256(0, filesize) == "db453b8de1a01a3e4d963847c0a0a45fb7e1a9b9e6d291c8883c74019f2fc91f"
+		or hash.sha256(0, filesize) == "f439dee4210d623b5aa7491bad8e8d9b43305f25a5d26940eb36f6460215cf8e"
 		or any of them
 }
 // =====================================   AS-IS  ====================================
