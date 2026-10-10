@@ -4,13 +4,13 @@ Auto-generated detection content for threats targeting **Saudi Arabia / the Gulf
 Indicators are collected from open threat-intel sources, normalized, tagged for
 Saudi relevance, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
 
-**Last updated:** 2026-10-10 09:34 UTC  |  **Last ingest run:** 2026-10-10 09:19:57
+**Last updated:** 2026-10-10 09:35 UTC  |  **Last ingest run:** 2026-10-10 09:19:57
 
 ## Summary
 
 - **49,594** total indicators collected
 - **1,908** tagged Saudi/Gulf-relevant
-- Detection rules: **9** YARA · **1647** Suricata · **1665** Snort · **3778** STIX2 indicators
+- Detection rules: **9** YARA · **1647** Suricata · **1665** Snort · **1889** STIX2 indicators
 - **8** MISP events
 
 ## IOCs by source
@@ -82,4 +82,4 @@ Auto-generated for defensive detection engineering. Indicators are unverified
 open-source intelligence and may produce false positives — validate before
 enforcement. MISP-generated YARA is string-based and intentionally broad.
 
-_Generated 2026-10-10 09:34 UTC._
+_Generated 2026-10-10 09:35 UTC._
