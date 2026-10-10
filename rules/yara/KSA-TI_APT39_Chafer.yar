@@ -1,11 +1,11 @@
 // ===================================== GENERATED ====================================
 
 import "hash"
-rule MISP_EVENT_c743fd85_b859_43e7_9378_de83a07a9618_PART1 : generated
+rule MISP_EVENT_7f52eb01_ec90_4d11_9e32_6fba50d8c557_PART1 : generated
 {
 	meta:
-		MISP_EVENT_INFO = "KSA-TI APT39/Chafer"
-		MISP_EVENT_UUID = "c743fd85-b859-43e7-9378-de83a07a9618"
+		MISP_EVENT_INFO = "KSA-TI APT39 (Chafer)"
+		MISP_EVENT_UUID = "7f52eb01-ec90-4d11-9e32-6fba50d8c557"
 		MISP_ORIGIN = "Automatically generated from non-Yara attribute(s)"
 	condition:
 		hash.sha256(0, filesize) == "94cae63dcbabb71c5dd43f55fd09caeffdcd7628a02a112fb3cba36698ef72bc"

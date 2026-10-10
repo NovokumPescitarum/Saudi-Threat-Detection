@@ -1,31 +1,37 @@
 # Saudi Threat Detection
 
-Auto-generated detection content for threats targeting **Saudi Arabia / the Gulf**.
-Indicators are collected from open threat-intel sources, normalized, tagged for
-Saudi relevance, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
+Auto-generated detection content for threats targeting **Saudi Arabia** and the wider **Middle East**. Indicators are collected from open threat-intel sources, normalized, filtered for relevance and recency, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
 
-**Last updated:** 2026-10-10 10:09 UTC  |  **Last ingest run:** 2026-10-10 09:53:39
+**Last updated:** 2026-10-10 10:27 UTC  |  **Last ingest run:** 2026-10-10 10:22:49
+
+## Strategy
+
+Two complementary lenses are combined:
+
+1. **Country-focused** — sources are queried for `saudi`/`ksa`/`gulf`/`mena`, `.sa` domains and Saudi-ransomware victims. These are tagged **Saudi**.
+2. **APT-focused** — indicators are attributed to known threat actors using word-boundary alias matching, then grouped by actor. Saudi-targeting actors are tagged **Saudi**; broader regional actors are tagged **Middle East**.
+
+**Recency:** only indicators observed within the last **90 days** are included (0 older relevant indicators were dropped). Undated indicators from curated feeds are retained.
 
 ## Summary
 
-- **60,133** total indicators collected
-- **5,137** tagged Saudi/Gulf-relevant
-- Detection rules: **13** YARA · **4405** Suricata · **4630** Snort · **5102** STIX2 indicators
-- **11** MISP events
-- **81** Saudi ransomware victims tracked (leak-site intel)
+- **50,043** total indicators collected
+- **540** recent **Saudi**-relevant indicators
+- **252** recent **Middle East**-relevant indicators
+- Detection rules: **13** YARA · **3** Suricata · **4** Snort · **780** STIX2 indicators
+- **13** MISP events  |  **81** Saudi ransomware victims
 
 ## IOCs by source
 
 | Source | Indicators |
 |---|---:|
-| urlhaus | 32,830 |
-| otx | 12,754 |
-| threatfox | 6,508 |
+| urlhaus | 32,846 |
+| threatfox | 6,482 |
 | signature_base | 4,878 |
-| malwarebazaar | 2,901 |
+| malwarebazaar | 2,853 |
+| otx | 2,743 |
 | eset_malware_ioc | 399 |
 | openphish | 300 |
-| ransomware_live | 67 |
 | tweetfeed | 20 |
 | feodo | 6 |
 
@@ -33,68 +39,59 @@ Saudi relevance, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
 
 | Type | Total | Saudi-relevant |
 |---|---:|---:|
-| url | 36,034 | 1,532 |
-| domain | 11,680 | 1,029 |
-| sha256 | 3,633 | 778 |
-| md5 | 3,175 | 1,043 |
-| ip | 2,773 | 4 |
-| sha1 | 2,763 | 705 |
-| email | 75 | 46 |
+| url | 33,652 | 1 |
+| domain | 6,801 | 1 |
+| ip | 2,765 | 0 |
+| sha256 | 2,606 | 188 |
+| md5 | 2,140 | 116 |
+| sha1 | 2,079 | 234 |
 
-## Saudi-relevant IOCs by attributed actor
+## Saudi-targeting actors
 
 | Actor | Indicators |
 |---|---:|
-| MuddyWater | 1,361 |
-| APT34/OilRig | 732 |
-| APT35/Charming Kitten | 522 |
-| APT33/Elfin | 266 |
-| Gaza Cybergang | 168 |
-| Agrius/BlackShadow | 142 |
-| APT42/Magic Hound | 137 |
-| GreenBug | 60 |
-| Molerats | 22 |
-| APT39/Chafer | 22 |
+| MuddyWater (Seedworm / Static Kitten) | 183 |
+| APT34 (OilRig / Helix Kitten) | 144 |
+| POLONIUM (Plaid Rain) | 118 |
+| XENOTIME (TRITON/TRISIS) | 26 |
+| APT39 (Chafer) | 22 |
+| Agrius (BlackShadow / Pink Sandstorm) | 21 |
+| APT33 (Elfin / Peach Sandstorm) | 20 |
+| Tortoiseshell (Imperial Kitten) | 4 |
 
-## Top malware families (Saudi-relevant)
+## Middle East actors
+
+| Actor | Indicators |
+|---|---:|
+| APT27 (Emissary Panda / LuckyMouse) | 156 |
+| Arid Viper (APT-C-23 / Desert Falcon) | 45 |
+| APT37 (ScarCruft / InkySquid) | 29 |
+| BackdoorDiplomacy | 22 |
+
+## Top malware families
 
 | Family | Indicators |
 |---|---:|
 | muddywater | 183 |
 | oilrig | 144 |
+| aridspy | 45 |
 | agrius | 21 |
-| ransomhub | 7 |
-| incransom | 7 |
-| Greenbug IOC Webshell | 7 |
-| Greenbug IOC Unknown | 7 |
-| Elfin Report on APT33 - Remcos | 5 |
-| lockbit3 | 4 |
-| dragonransomware | 4 |
-| alphv | 4 |
-| nova | 3 |
-| killsec | 3 |
-| dragonforce | 3 |
-| clop | 3 |
-
-## MISP events
-
-| Event | Info | Attributes |
-|---:|---|---:|
-| 3454 | KSA-TI APT33/Elfin | 266 |
-| 3455 | KSA-TI APT34/OilRig | 732 |
-| 3456 | KSA-TI APT42/Magic Hound | 137 |
-| 3457 | KSA-TI Gaza Cybergang | 168 |
-| 3458 | KSA-TI GreenBug | 60 |
-| 3459 | KSA-TI Molerats | 22 |
-| 3460 | KSA-TI MuddyWater | 1361 |
-| 3461 | KSA-TI Unattributed | 1716 |
-| 3462 | KSA-TI APT35/Charming Kitten | 522 |
-| 3463 | KSA-TI APT39/Chafer | 22 |
-| 3464 | KSA-TI Agrius/BlackShadow | 142 |
+| Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/ | 20 |
+| POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 20 |
+| POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 17 |
+| POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 11 |
+| POLONIUM IOC - CreepyDrive - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 8 |
+| POLONIUM IOC - MegaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 8 |
+| POLONIUM IOC - FlipCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 7 |
+| POLONIUM IOC - Keylogger modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 7 |
+| POLONIUM IOC - PapaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 7 |
+| ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/ | 6 |
+| Bronze Union IOC - MD5 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION | 5 |
 
 ## Ransomware victims (Saudi Arabia)
 
 _81 victim listings tracked from public ransomware leak sites (via ransomware.live)._
+
 | Ransomware group | Victim listings |
 |---|---:|
 | ransomhub | 7 |
@@ -109,29 +106,41 @@ _81 victim listings tracked from public ransomware leak sites (via ransomware.li
 | dragonforce | 3 |
 | clop | 3 |
 | ransomhouse | 2 |
-| ransomexx | 2 |
-| ralord | 2 |
-| krybit | 2 |
+
+## MISP events
+
+| Event | Info | Attributes |
+|---:|---|---:|
+| 3465 | KSA-TI APT27 (Emissary Panda / LuckyMouse) | 156 |
+| 3466 | KSA-TI APT33 (Elfin / Peach Sandstorm) | 20 |
+| 3467 | KSA-TI APT34 (OilRig / Helix Kitten) | 144 |
+| 3468 | KSA-TI APT37 (ScarCruft / InkySquid) | 29 |
+| 3469 | KSA-TI APT39 (Chafer) | 22 |
+| 3470 | KSA-TI Agrius (BlackShadow / Pink Sandstorm) | 21 |
+| 3471 | KSA-TI Arid Viper (APT-C-23 / Desert Falcon) | 45 |
+| 3472 | KSA-TI BackdoorDiplomacy | 22 |
+| 3473 | KSA-TI MuddyWater (Seedworm / Static Kitten) | 183 |
+| 3474 | KSA-TI POLONIUM (Plaid Rain) | 106 |
+| 3475 | KSA-TI Tortoiseshell (Imperial Kitten) | 4 |
+| 3476 | KSA-TI Unattributed | 2 |
+| 3477 | KSA-TI XENOTIME (TRITON/TRISIS) | 26 |
 
 ## Content
 
 ```
 rules/
-├── yara/            # YARA rules (all_ksa.yar + per-event)
-├── ids/suricata/    # Suricata NIDS rules (all_ksa.rules + per-event)
+├── yara/            # YARA rules (all_ksa.yar + per-actor)
+├── ids/suricata/    # Suricata NIDS rules (all_ksa.rules + per-actor)
 ├── ids/snort/       # Snort NIDS rules
 └── siem/stix2/      # STIX2 bundles
 ```
 
 ## Sources
 
-AlienVault OTX · abuse.ch (ThreatFox, MalwareBazaar, URLhaus, Feodo Tracker) · OpenPhish.
-New sources are added by dropping a collector module into the pipeline.
+AlienVault OTX · abuse.ch (ThreatFox, MalwareBazaar, URLhaus, Feodo Tracker) · OpenPhish · Neo23x0 signature-base · ESET malware-ioc · TweetFeed · ransomware.live. New sources are added by dropping a collector module into the pipeline.
 
 ## Disclaimer
 
-Auto-generated for defensive detection engineering. Indicators are unverified
-open-source intelligence and may produce false positives — validate before
-enforcement. MISP-generated YARA is string-based and intentionally broad.
+Auto-generated for defensive detection engineering. Indicators are unverified open-source intelligence and may produce false positives — validate before enforcement. MISP-generated YARA is string-based and intentionally broad.
 
-_Generated 2026-10-10 10:09 UTC._
+_Generated 2026-10-10 10:27 UTC._
