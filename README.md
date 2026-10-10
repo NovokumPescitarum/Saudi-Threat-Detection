@@ -2,7 +2,7 @@
 
 Auto-generated detection content for threats targeting **Saudi Arabia** and the wider **Middle East**. Indicators are collected from open threat-intel sources, normalized, filtered for relevance and recency, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
 
-**Last updated:** 2026-10-10 11:48 UTC  |  **Last ingest run:** 2026-10-10 11:46:35
+**Last updated:** 2026-10-10 11:52 UTC  |  **Last ingest run:** 2026-10-10 11:46:35
 
 ## Strategy
 
@@ -162,4 +162,4 @@ AlienVault OTX · abuse.ch (ThreatFox, MalwareBazaar, URLhaus, Feodo Tracker) ·
 
 Auto-generated for defensive detection engineering. Indicators are unverified open-source intelligence and may produce false positives — validate before enforcement. MISP-generated YARA is string-based and intentionally broad.
 
-_Generated 2026-10-10 11:48 UTC._
+_Generated 2026-10-10 11:52 UTC._
