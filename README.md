@@ -2,7 +2,7 @@
 
 Auto-generated detection content for threats targeting **Saudi Arabia** and the wider **Middle East**. Indicators are collected from open threat-intel sources, normalized, filtered for relevance and recency, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
 
-**Last updated:** 2026-10-10 14:52 UTC  |  **Last ingest run:** 2026-10-10 11:46:35
+**Last updated:** 2026-10-11 01:28 UTC  |  **Last ingest run:** 2026-10-11 01:22:42
 
 ## Strategy
 
@@ -11,35 +11,35 @@ Two complementary lenses are combined:
 1. **Country-focused** — sources are queried for `saudi`/`ksa`/`gulf`/`mena`, `.sa` domains and Saudi-ransomware victims. These are tagged **Saudi**.
 2. **APT-focused** — indicators are attributed to known threat actors using word-boundary alias matching, then grouped by actor. Saudi-targeting actors are tagged **Saudi**; broader regional actors are tagged **Middle East**.
 
-**Recency:** only indicators observed within the last **90 days** are included (1,769 older relevant indicators were dropped). Undated indicators from curated feeds are retained.
+**Recency:** only indicators observed within the last **90 days** are included (1,770 older relevant indicators were dropped). Undated indicators from curated feeds are retained.
 
 ## Summary
 
-- **86,744** total indicators collected
-- **892** recent **Saudi**-relevant indicators
+- **88,448** total indicators collected
+- **972** recent **Saudi**-relevant indicators
 - **1,006** recent **Middle East**-relevant indicators
-- Detection rules: **20** YARA · **109** Suricata · **111** Snort · **2343** Sigma · **1864** STIX2 indicators
-- **20** MISP events  |  **81** Saudi ransomware victims
+- Detection rules: **21** YARA · **262** Suricata · **265** Snort · **2343** Sigma · **1945** STIX2 indicators
+- **21** MISP events  |  **81** Saudi ransomware victims
 - ATT&CK coverage: **482** techniques across **33** tracked Saudi/MEA actors
 
 ## IOCs by source
 
 | Source | Indicators |
 |---|---:|
-| urlhaus | 32,857 |
+| urlhaus | 33,150 |
 | cins | 15,000 |
 | eset_malware_ioc | 14,958 |
-| threatfox | 6,493 |
+| threatfox | 6,940 |
 | signature_base | 4,878 |
-| tweetfeed | 3,990 |
+| tweetfeed | 4,035 |
+| malwarebazaar | 3,645 |
 | otx | 3,403 |
-| malwarebazaar | 2,883 |
 | circl_feed | 2,347 |
+| openphish | 600 |
 | malwarebazaar_tags | 385 |
-| openphish | 300 |
+| research:2026-10-10 | 99 |
 | ransomware_live | 67 |
 | dshield | 20 |
-| research:2026-10-10 | 18 |
 | feodo | 6 |
 | urlscan | 2 |
 
@@ -47,12 +47,12 @@ Two complementary lenses are combined:
 
 | Type | Total | Saudi-relevant |
 |---|---:|---:|
-| url | 35,538 | 77 |
-| ip | 18,381 | 22 |
-| domain | 9,144 | 2 |
-| sha256 | 8,578 | 696 |
-| md5 | 7,832 | 319 |
-| sha1 | 7,248 | 269 |
+| url | 36,207 | 78 |
+| ip | 18,427 | 49 |
+| domain | 9,336 | 44 |
+| sha256 | 8,856 | 696 |
+| md5 | 8,097 | 330 |
+| sha1 | 7,502 | 269 |
 | email | 23 | 0 |
 
 ## Saudi-targeting actors
@@ -63,6 +63,7 @@ Two complementary lenses are combined:
 | MuddyWater (Seedworm / Static Kitten) | 183 |
 | APT34 (OilRig / Helix Kitten) | 144 |
 | FamousSparrow | 127 |
+| Tortoiseshell | 81 |
 | XENOTIME (TRITON/TRISIS) | 26 |
 | APT39 (Chafer) | 22 |
 | Agrius (BlackShadow / Pink Sandstorm) | 21 |
@@ -94,6 +95,7 @@ Two complementary lenses are combined:
 | oilrig | 144 |
 | famoussparrow | 96 |
 | backdoordiplomacy | 66 |
+| NodeRabbit/PollCat | 48 |
 | aridspy | 45 |
 | scarcruft | 42 |
 | C2 | 26 |
@@ -102,7 +104,6 @@ Two complementary lenses are combined:
 | Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/ | 20 |
 | POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 20 |
 | POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 17 |
-| POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/ | 11 |
 
 ## Ransomware victims (Saudi Arabia)
 
@@ -147,6 +148,7 @@ _81 victim listings tracked from public ransomware leak sites (via ransomware.li
 | 3482 | KSA-TI FamousSparrow | 127 |
 | 3483 | KSA-TI SparklingGoblin | 24 |
 | 3484 | KSA-TI Mirage Kitten | 12 |
+| 3485 | KSA-TI Tortoiseshell | 81 |
 
 ## Content
 
@@ -167,4 +169,4 @@ AlienVault OTX · abuse.ch (ThreatFox, MalwareBazaar, URLhaus, Feodo Tracker) ·
 
 Auto-generated for defensive detection engineering. Indicators are unverified open-source intelligence and may produce false positives — validate before enforcement. MISP-generated YARA is string-based and intentionally broad.
 
-_Generated 2026-10-10 14:52 UTC._
+_Generated 2026-10-11 01:28 UTC._
