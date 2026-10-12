@@ -494,3 +494,36 @@ alert ip $HOME_NET any -> 167.179.89.68 any (msg: "MISP e3485 [source:research:2
 alert ip $HOME_NET any -> 89.44.80.168 any (msg: "MISP e3485 [source:research:2026-10-10,actor:Tortoiseshell] Outgoing To IP: 89.44.80.168"; flow:not_established,to_server; flowbits:isnotset,outbound_ioc; flowbits:set,outbound_ioc;  classtype:bad-unknown; sid:10978161; rev:1; priority:2; reference:url,https://misp.ali/events/view/3485;) 
 alert ip $HOME_NET any -> 72.56.34.52 any (msg: "MISP e3485 [source:research:2026-10-10,actor:Tortoiseshell] Outgoing To IP: 72.56.34.52"; flow:not_established,to_server; flowbits:isnotset,outbound_ioc; flowbits:set,outbound_ioc;  classtype:bad-unknown; sid:10978171; rev:1; priority:2; reference:url,https://misp.ali/events/view/3485;) 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg: "MISP e3485 [source:research:2026-10-10,actor:Tortoiseshell] Outgoing HTTP URL: https|3a|//oracle-challenge.s3.us-east-1.amazonaws.com/Front-Technical-Challenge.zip"; flow:to_server,established; content:"https|3a|//oracle-challenge.s3.us-east-1.amazonaws.com/Front-Technical-Challenge.zip"; nocase; http_uri; tag:session,600,seconds; classtype:bad-unknown; sid:10978291; rev:1; priority:2; reference:url,https://misp.ali/events/view/3485;) 
+# ---- event 3486: KSA-TI Research 7669d3486c54769a ----
+# MISP export of IDS rules - optimized for snort
+#
+# These NIDS rules contain some variables that need to exist in your configuration.
+# Make sure you have set:
+#
+# $HOME_NET     - Your internal network range
+# $EXTERNAL_NET - The network considered as outside
+# $SMTP_SERVERS - All your internal SMTP servers
+# $HTTP_PORTS   - The ports used to contain HTTP traffic (not required with suricata export)
+# 
+# ---- event 3487: KSA-TI Research b06458d735028b87 ----
+# MISP export of IDS rules - optimized for snort
+#
+# These NIDS rules contain some variables that need to exist in your configuration.
+# Make sure you have set:
+#
+# $HOME_NET     - Your internal network range
+# $EXTERNAL_NET - The network considered as outside
+# $SMTP_SERVERS - All your internal SMTP servers
+# $HTTP_PORTS   - The ports used to contain HTTP traffic (not required with suricata export)
+# 
+# ---- event 3488: KSA-TI Research 1fd0c66992a3d2b6 ----
+# MISP export of IDS rules - optimized for snort
+#
+# These NIDS rules contain some variables that need to exist in your configuration.
+# Make sure you have set:
+#
+# $HOME_NET     - Your internal network range
+# $EXTERNAL_NET - The network considered as outside
+# $SMTP_SERVERS - All your internal SMTP servers
+# $HTTP_PORTS   - The ports used to contain HTTP traffic (not required with suricata export)
+# 
