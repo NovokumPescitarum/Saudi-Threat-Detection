@@ -2,7 +2,7 @@
 
 Auto-generated detection content for threats targeting **Saudi Arabia** and the wider **Middle East**. Indicators are collected from open threat-intel sources, normalized, filtered for relevance and recency, uploaded to MISP, and exported here as YARA / IDS / SIEM rules.
 
-**Last updated:** 2026-10-13 01:24 UTC  |  **Last ingest run:** 2026-10-13T01:21:28.794167+00:00
+**Last updated:** 2026-10-14 01:24 UTC  |  **Last ingest run:** 2026-10-14T01:21:06.194457+00:00
 
 ## Strategy
 
@@ -11,34 +11,34 @@ Two complementary lenses are combined:
 1. **Country-focused** — sources are queried for `saudi`/`ksa`/`gulf`/`mena`, `.sa` domains and Saudi-ransomware victims. These are tagged **Saudi**.
 2. **APT-focused** — indicators are attributed to known threat actors using word-boundary alias matching, then grouped by actor. Saudi-targeting actors are tagged **Saudi**; broader regional actors are tagged **Middle East**.
 
-**Recency:** only indicators observed within the last **90 days** are included (2,937 older relevant indicators were dropped). Undated indicators from curated feeds are retained.
+**Recency:** only indicators observed within the last **90 days** are included (2,938 older relevant indicators were dropped). Undated indicators from curated feeds are retained.
 
 ## Summary
 
-- **95,790** total indicators collected
+- **100,031** total indicators collected
 - **736** recent **Saudi**-relevant indicators
 - **124** recent **Middle East**-relevant indicators
 - Detection rules: **24** YARA · **262** Suricata · **265** Snort · **2343** Sigma · **387** STIX2 indicators
-- **24** MISP events  |  **82** Saudi ransomware victims
+- **24** MISP events  |  **83** Saudi ransomware victims
 - ATT&CK coverage: **482** techniques across **33** tracked Saudi/MEA actors
 
 ## IOCs by source
 
 | Source | Indicators |
 |---|---:|
-| urlhaus | 34,662 |
+| urlhaus | 35,233 |
 | eset_malware_ioc | 15,097 |
 | cins | 15,000 |
-| threatfox | 9,223 |
-| malwarebazaar | 6,747 |
+| threatfox | 11,392 |
+| malwarebazaar | 8,226 |
 | signature_base | 4,878 |
-| tweetfeed | 4,283 |
-| otx | 3,403 |
+| tweetfeed | 4,388 |
+| otx | 3,404 |
 | circl_feed | 2,347 |
-| openphish | 1,200 |
+| openphish | 1,500 |
 | malwarebazaar_tags | 385 |
 | research:2026-10-10 | 99 |
-| ransomware_live | 68 |
+| ransomware_live | 69 |
 | research:https://www.group-ib.com/blog/heavygram-handala-hack-telegram-c2/ | 22 |
 | dshield | 20 |
 | research:https://www.group-ib.com/blog/remcontrol-android-banking-trojan/ | 18 |
@@ -52,12 +52,12 @@ Two complementary lenses are combined:
 
 | Type | Total | Saudi-relevant |
 |---|---:|---:|
-| url | 38,994 | 79 |
-| ip | 19,081 | 49 |
-| sha256 | 10,070 | 696 |
-| domain | 9,861 | 44 |
-| md5 | 9,181 | 330 |
-| sha1 | 8,580 | 269 |
+| url | 40,988 | 80 |
+| ip | 19,235 | 49 |
+| sha256 | 10,584 | 696 |
+| domain | 10,452 | 44 |
+| md5 | 9,676 | 330 |
+| sha1 | 9,073 | 269 |
 | email | 23 | 0 |
 
 ## Saudi-targeting actors
@@ -100,7 +100,7 @@ Two complementary lenses are combined:
 
 ## Ransomware victims (Saudi Arabia)
 
-_82 victim listings tracked from public ransomware leak sites (via ransomware.live)._
+_83 victim listings tracked from public ransomware leak sites (via ransomware.live)._
 
 | Ransomware group | Victim listings |
 |---|---:|
@@ -165,4 +165,4 @@ AlienVault OTX · abuse.ch (ThreatFox, MalwareBazaar, URLhaus, Feodo Tracker) ·
 
 Auto-generated for defensive detection engineering. Indicators are unverified open-source intelligence and may produce false positives — validate before enforcement. MISP-generated YARA is string-based and intentionally broad.
 
-_Generated 2026-10-13 01:24 UTC._
+_Generated 2026-10-14 01:24 UTC._
