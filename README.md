@@ -29,11 +29,17 @@ The private detection lab uses the complete authoritative rule pack, including e
 Lab evidence must distinguish query-only, persisted-alert-tested, native-compile-only and behavior-tested results, and retain sample/fixture gaps. Historical success is not fresh validation. New public uploads require exact current hashes bound to reviewed validation receipts; unsupported/failed inputs must not be represented as validated. Private receipts and telemetry are excluded.
 
 <!-- public-validation-summary:start -->
+
 ### Recorded hash-bound lab evidence
+
 This README refresh does not execute a lab run or upload.
+
 Recorded completion: **2026-10-20T10:41:58Z** (not a new run).
+
 Raw bound inventory: **2429 files**; files are not unique rules or validated cases.
+
 Reviewed private receipt SHA-256: `c31ad732bfe92c2a855b282673c19088097c3d0c54b25e0914270bfb8cfeddef`.
+
 | Evidence category | Files | Passed cases | Failed cases |
 |---|---:|---:|---:|
 | behavior-tested | 5 | 1048 | 0 |
@@ -44,17 +50,31 @@ Reviewed private receipt SHA-256: `c31ad732bfe92c2a855b282673c19088097c3d0c54b25
 | unsupported | 0 | 0 | 0 |
 | not-tested | 393 | 0 | 0 |
 | failed | 0 | 0 | 0 |
+
 Gaps (file counts): sample-unavailable: 25; fixture-unavailable: 347; engine-unavailable: 0; unsupported-feature: 0; telemetry-unavailable: 0; not-executed: 51; check-failed: 0.
+
 Cases are recorded per artifact, not deduplicated scenarios. Query, compile and structural checks are not behavior validation. Gapped/unsupported/failed inputs remain held; this summary is not blanket upload approval or real-world accuracy evidence.
+
 #### Original versus normalized publication
+
 Canonical originals are preserved. Only first-msg descriptive quote escaping differs in the files below; headers and detection-option bytes are unchanged. Both exact-byte lanes compiled in native Snort; normalized Snort runtime positive/negative cases are **not tested**. Unchanged files retain their original exact-byte evidence and gaps.
+
 Original full-pack receipt SHA-256: `537561dc4c527bf06b36ec85f6125b2f24454ab2c89879019cdc24601858c7b0`.
+
 Separate native original/normalized compile receipt SHA-256: `e4507386d01f3358de0a1e21e1d853cb489a613a0190c79398bea35b72f47785`.
+
 Independent mapping/implementation review SHA-256: `53089c5c405d2b2cb1a0c8156f59f43f62bb4ec3bd7db5af9e4b58e42538b650`.
-| File | Original SHA-256 | Published normalized SHA-256 |
-|---|---|---|
-| `ids/snort/KSA-TI_APT10_menuPass.rules` | `cdb79ea1f2326ec8a1e53bf4968597655375d692d6a2595715a22e091aea4f2b` | `a1f1860b153da385a20e7eadac4fb09dd8e637fdab9673be50d83b54f5ca6064` |
-| `ids/snort/all_ksa.rules` | `6d960a5832ec5056c7c3e851ef79514a103f3552468c0f5fb6ea433ce41170dd` | `31e53c774e363cc01ad3e1840a6f910c86546802f0b5186d69f345523bc1e894` |
+
+##### `ids/snort/KSA-TI_APT10_menuPass.rules`
+
+- Original SHA-256: `cdb79ea1f2326ec8a1e53bf4968597655375d692d6a2595715a22e091aea4f2b`
+- Published normalized SHA-256: `a1f1860b153da385a20e7eadac4fb09dd8e637fdab9673be50d83b54f5ca6064`
+
+##### `ids/snort/all_ksa.rules`
+
+- Original SHA-256: `6d960a5832ec5056c7c3e851ef79514a103f3552468c0f5fb6ea433ce41170dd`
+- Published normalized SHA-256: `31e53c774e363cc01ad3e1840a6f910c86546802f0b5186d69f345523bc1e894`
+
 <!-- public-validation-summary:end -->
 
 ## Strategy
